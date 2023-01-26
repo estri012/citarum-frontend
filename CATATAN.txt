@@ -1,0 +1,26 @@
+cetak KTP-el
+Kartu Identitas Anak
+Perubahan Biodata
+Numpang Kartu Keluarga
+gabung Kartu Keluarga karena perkawinan
+Pecah Kartu Keluarga
+Pisah Kartu Keluarga karena perceraian
+Cetak ulang Kartu Keluarga
+Perubahan alamat/pindah antar kecamatan, kelurahan/RT
+Penduduk pendatang luar daerah
+Pindah luar daerah
+Batal pindah luar daerah
+Kartu Keluarga WNA tetap
+Surat Keterangan tempat tinggal WNA
+
+
+FORM :
+Dropdown Select
+Input Text (number&tulisan)
+Datepicker (date)
+Timepicker (time 24H)
+Upload Dokumen
+Checkbox
+Submit Button
+
+FONT : source sans pro

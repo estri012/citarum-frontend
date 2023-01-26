@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Login &mdash; Disdukcapil Kab. Bandung</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/bootstrap-social/bootstrap-social.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body style="background-image: url('assets/img/backdrop.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+  <div id="app">
+    <section class="section">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+            <div class="login-brand">
+              <img src="assets/img/logokab.png" alt="logo" width="100" class="shadow-light">
+            </div>
+            <!--Judul form-->
+            <div class="card card-primary">
+              <div class="card-header"><h2 style="padding-left: 14%; color: #3D6C53;">Dukcapil Online</h2></div>
+              <!--Form body card-->
+              <div class="card-body">
+                <!--Form login start-->
+                <form method="POST" action="" class="needs-validation" novalidate="">
+                  <!--Div no hp-->
+                  <div class="form-group">
+                    <label for="nomorhp">Nomor HP</label>
+                    <input id="nomorhp" type="nomorhp" class="form-control" name="nomorhp" tabindex="1" required autofocus>
+                    <div class="invalid-feedback">
+                      Tolong isi nomor HP anda!
+                    </div>
+                  </div>
+                  <!--Div kata sandi-->
+                  <div class="form-group">
+                    <div class="d-block">
+                    	<label for="password" class="control-label">Kata Sandi</label>
+                      <div class="float-right">
+                        <a href="auth-forgot-password.html" class="text-small">
+                          Lupa kata sandi?
+                        </a>
+                      </div>
+                    </div>
+                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
+                    <div class="invalid-feedback">
+                      Tolong isi kata sandi anda!
+                    </div>
+                  </div>
+                  <!--Captcha PHP -->
+                  <?php 
+                  if (isset($_POST['login'])) {
+                    session_start();
+                    if($_SESSION['captcha'] == $_POST['kode']){
+                      //isi dengan kode pendaftaran ke database mysql teman-teman
+                      echo "Berhasil";
+                    }else{
+                      echo "Kode captcha salah!";
+                    }
+                  }
+                  ?>
+
+                  <!--Bagian captcha-->
+                  <div class="form-group">
+                    <img src="captcha.php?date=<?php echo date('YmdHis');?>" alt="">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="kode" placeholder="kode captcha" required>
+                  </div>
+                  <!--Checkbox ingat saya-->
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
+                      <label class="custom-control-label" for="remember-me">Ingat Saya</label>
+                    </div>
+                  </div>
+                  <!--Tombol masuk-->
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" name="login" tabindex="4">
+                      Masuk
+                    </button>
+                  </div>
+                </form>
+                <!--Form end-->
+              </div>
+            </div>
+            <!--Hyperlink buat akun-->
+            <div class="mt-5 text-muted text-center">
+              Belum punya akun? <a href="auth-register.html">Buat Akun</a>
+            </div>
+            <div class="simple-footer">
+              Copyright &copy; Disdukcapil Kab. Bandung 2023
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+
+  <!-- Page Specific JS File -->
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
