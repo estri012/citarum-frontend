@@ -1,0 +1,11 @@
+<dl class="row">
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+</dl>
+
+
+
+<dl class="row">
+	<dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+	<dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+</dl>

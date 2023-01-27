@@ -1,17 +1,40 @@
-cetak KTP-el
-Kartu Identitas Anak
-Perubahan Biodata
-Numpang Kartu Keluarga
-gabung Kartu Keluarga karena perkawinan
-Pecah Kartu Keluarga
-Pisah Kartu Keluarga karena perceraian
-Cetak ulang Kartu Keluarga
-Perubahan alamat/pindah antar kecamatan, kelurahan/RT
-Penduduk pendatang luar daerah
-Pindah luar daerah
-Batal pindah luar daerah
-Kartu Keluarga WNA tetap
-Surat Keterangan tempat tinggal WNA
+CAPIL :
+akta Kelahiran ==(aktakelahiran)
+akta Kematian ==(aktakematian)
+akta perkawinan ==(aktaperkawinan)
+akta perceraian ==(aktaperceraian)
+kehilangan/kerusakan akta Kelahiran ==(hilangkelahiran)
+kehilangan/kerusakan akta Kematian ==(hilangkematian)
+pengesahan/pengakuan Anak ==(pengesahananak)
+pengabsahan akta ==(pengabsahan)
+
+DAFDUK :
+cetak KTP-el ==(ktp)
+cetak KIA (Kartu Identitas Anak) ==(kia)
+Pengajuan Biodata ==(biodata)
+Perubahan Biodata ==(ubahbiodata)
+Numpang Kartu Keluarga ==(numpang-kk)
+gabung Kartu Keluarga karena perkawinan ==(gabung-kk)
+Pecah Kartu Keluarga ==(pecah-kk)
+Pisah Kartu Keluarga karena perceraian ==(pisah-kk)
+Cetak ulang Kartu Keluarga ==(cetakulang-kk)
+Perubahan alamat/pindah antar kecamatan, kelurahan/RT ==(ubahalamat)
+Penduduk pendatang luar daerah ==(datang-luar)
+Pindah luar daerah ==(pindah-luar)
+Batal pindah luar daerah ==(batal-pindah)
+Kartu Keluarga WNA tetap ==(kk-wna)
+Surat Keterangan tempat tinggal WNA ==(sukettinggal-wna)
+
+
+ISI CARD Selesai :
+Judul : Jenis Pengajuan **
+Tanggal dan waktu pengajuan **
+<hr>
+NIK Pemohon **
+Nama Pemohon **
+No Dokumen **
+Catatan (bold)
+Dokumen sudah selesai silakan cek email atau pilih tombol 'unduh dokumen' untuk mengunduh dokumen yang sudag selesai diajukan
 
 
 FORM :
@@ -24,3 +47,13 @@ Checkbox
 Submit Button
 
 FONT : source sans pro
+
+WARNA :
+#4BEA81  card header ijo terang
+#3D6C53  background ijo
+#e2fae7  ijo muda banget
+
+RIWAYAT EDIT :
+26/01/23 First Commit
+27/01/23 Edit menu, buat card
+

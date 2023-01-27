@@ -149,6 +149,11 @@ p, ul:not(.list-unstyled), ol {
 .text-muted {
   color: #98a6ad !important; }
 
+/* div text center */
+.center {
+  text-align: center;
+}
+
 /* 3.2 Form */
 .form-control,
 .input-group-text,
@@ -611,9 +616,13 @@ select.form-control:not([size]):not([multiple]) {
   border: none;
   position: relative;
   margin-bottom: 30px; }
+  .card-selesai {
+    background-color: #4BEA81;
+    color: white;
+  }
   .card .card-header, .card .card-body, .card .card-footer {
-    background-color: transparent;
-    padding: 25px 25px; }
+    /*background-color: transparent;*/
+    padding: 15px 15px; }
   .card .navbar {
     position: static; }
   .card .card-body {
@@ -634,9 +643,9 @@ select.form-control:not([size]):not([multiple]) {
     -ms-grid-row-align: center;
     align-self: center;
     width: 100%;
-    min-height: 70px;
-    padding: 15px 25px;
-    display: flex;
+    min-height: 25px;
+    padding: 2px 2px;
+    /*display: flex;*/
     align-items: center; }
     .card .card-header .btn {
       margin-top: 1px;
@@ -1314,6 +1323,18 @@ h6 .badge {
       background-color: #3D6C53 !important; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.disabled:active, .btn-primary.disabled:hover {
     background-color: #3D6C53 !important; }
+
+.btn-riwayat-selesai {
+  background-color: white;
+  border-color: #4BEA81;
+  color : #4BEA81;
+}
+
+.btn-unduh-selesai {
+  background-color: #4BEA81;
+  border-color: #4BEA81;
+  color : white;
+}
 
 .btn-outline-primary, .btn-outline-primary.disabled {
   border-color: #6777ef;
