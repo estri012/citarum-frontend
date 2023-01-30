@@ -620,6 +620,23 @@ select.form-control:not([size]):not([multiple]) {
     background-color: #4BEA81;
     color: white;
   }
+  .card-diajukan {
+    background-color: #5B47D2;
+    color: white;
+  }
+  .card-proses {
+    background-color: #FFB906;
+    color: white;
+  }
+  .card-perbaikan {
+    background-color: #FE0101;
+    color: white;
+  }
+  .card-unggah {
+    background-color: #C75AFB;
+    color: white;
+  }
+
   .card .card-header, .card .card-body, .card .card-footer {
     /*background-color: transparent;*/
     padding: 15px 15px; }
@@ -1329,11 +1346,57 @@ h6 .badge {
   border-color: #4BEA81;
   color : #4BEA81;
 }
+.btn-riwayat-diajukan {
+  background-color: white;
+  border-color: #5B47D2;
+  color : #5B47D2;
+}
+.btn-riwayat-proses {
+  background-color: white;
+  border-color: #FFB906;
+  color: #FFB906;
+}
+.btn-riwayat-perbaikan {
+  background-color: white;
+  border-color: #FE0101;
+  color: #FE0101;
+}
+.btn-riwayat-unggah {
+  background-color: white;
+  border-color: #C75AFB;
+  color: #C75AFB;
+}
 
 .btn-unduh-selesai {
   background-color: #4BEA81;
   border-color: #4BEA81;
   color : white;
+}
+
+.btn-hubungi-diajukan {
+  background-color: #5B47D2;
+  border-color: #5B47D2;
+  color: white;
+}
+.btn-hubungi-proses {
+  background-color: #FFB906;
+  border-color: #FFB906;
+  color: white;
+}
+.btn-hubungi-perbaikan {
+  background-color: #FE0101;
+  border-color: #FE0101;
+  color: white;
+}
+.btn-hubungi-unggah {
+  background-color: #C75AFB;
+  border-color: #C75AFB;
+  color: white;
+}
+.btn-hubungi-selesai {
+  background-color: #4BEA81;
+  border-color: #4BEA81;
+  color: white;
 }
 
 .btn-outline-primary, .btn-outline-primary.disabled {

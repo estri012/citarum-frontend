@@ -48,6 +48,13 @@ Submit Button
 
 FONT : source sans pro
 
+CARD :
+selesai ==> #4BEA81 == card-selesai
+diajukan ==> #5B47D2 == card-diajukan
+sedang diproses ==> #FFB906 == card-proses
+butuh perbaikan ==> #FE0101 == card-perbaikan
+proses unggah ==> #C75AFB == card-unggah
+
 WARNA :
 #4BEA81  card header ijo terang
 #3D6C53  background ijo

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Dokumen Selesai &mdash; Disdukcapil Kab.Bandung</title>
+  <title>Disdukcapil Kab.Bandung</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -150,15 +150,15 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-signature"></i> <span>Pencatatan Sipil</span></a>
               <ul class="dropdown-menu">
-                <hr><li><a class="nav-link" href="aktakelahiran.html">Akta Kelahiran</a></li><hr>
-                <li><a class="nav-link" href="aktakematian.html">Akta Kematian</a></li><hr>
-                <li><a class="nav-link" href="aktaperkawinan.html">Akta Perkawinan</a></li><hr>
-                <li><a class="nav-link" href="aktaperceraian.html">Akta Perceraian</a></li><hr>
-                <li><a class="nav-link" href="hilangkelahiran.html">Kehilangan/Kerusakan Akta Kelahiran</a></li><hr>
-                <li><a class="nav-link" href="hilangkematian.html">Kehilangan/Kerusakan Akta Kematian</a></li><hr>
-                <li><a class="nav-link" href="pengesahananak.html">Pengesahan atau Pengakuan Anak</a></li><hr>
-                <li><a class="nav-link" href="pengesahananak.html">Kehilangan/Kerusakan Akta Perkawinan dan Perceraian</a></li><hr>
-                <li><a class="nav-link" href="pengabsahan.html">Pengabsahan Akta</a></li><hr>
+                <hr><li><a class="nav-link" href="aktakelahiran.html" data-toggle="modal" data-target="#modalCenter">Akta Kelahiran</a></li><hr>
+                <li><a class="nav-link" href="aktakematian.html" data-toggle="modal" data-target="#modalCenter">Akta Kematian</a></li><hr>
+                <li><a class="nav-link" href="aktaperkawinan.html" data-toggle="modal" data-target="#modalCenter">Akta Perkawinan</a></li><hr>
+                <li><a class="nav-link" href="aktaperceraian.html" data-toggle="modal" data-target="#modalCenter">Akta Perceraian</a></li><hr>
+                <li><a class="nav-link" href="hilangkelahiran.html" data-toggle="modal" data-target="#modalCenter">Kehilangan/Kerusakan Akta Kelahiran</a></li><hr>
+                <li><a class="nav-link" href="hilangkematian.html" data-toggle="modal" data-target="#modalCenter">Kehilangan/Kerusakan Akta Kematian</a></li><hr>
+                <li><a class="nav-link" href="pengesahananak.html" data-toggle="modal" data-target="#modalCenter">Pengesahan atau Pengakuan Anak</a></li><hr>
+                <li><a class="nav-link" href="pengesahananak.html" data-toggle="modal" data-target="#modalCenter">Kehilangan/Kerusakan Akta Perkawinan dan Perceraian</a></li><hr>
+                <li><a class="nav-link" href="pengabsahan.html" data-toggle="modal" data-target="#modalCenter">Pengabsahan Akta</a></li><hr>
               </ul>
             </li>
             <!--Sidebar Pendaftaran Penduduk-->
@@ -195,170 +195,9 @@
         <section class="section">
           <!--Judul Form-->
           <div class="section-header">
-            <h1>Dokumen Selesai</h1>
-            <!--Filter Tanggal, belum diupdate JSnya-->
-            <div style="margin-left: 73%;">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-calendar"></i>
-                  </div>
-                </div>
-                <input type="text" class="form-control datepicker">
-              </div>
-            </div>
+            <h1>    </h1>
           </div>
-          <!--Row buat cards-->
-          <div class="row">
-            <!--KASIH JAVASCRIPT Kalau GA ADA PENGAJUAN-->
-
-            <!--Card start-->
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card border rounded">
-                <div class="card-header center card-selesai">
-                  <h5>Selesai</h5>
-                </div>
-                <div class="card-body">
-                  <!--Javascript disini ambil jenis dokumen-->
-                  <h5 class="card-title">Perubahan Biodata</h5>     
-                  <dl class="row">
-                    <!--Tanggal sama waktu pengajuan-->
-                    <dt class="col-sm-7">
-                      <i class="fas fa-calendar"></i>
-                      <!--Javascript ambil tanggal-->
-                      27 Januari 2023
-                    </dt>
-                    <dt class="col-sm-5">
-                      <i class="fas fa-clock"></i>
-                      <!--Javascript ambil waktu-->
-                      08:00 WIB
-                    </dt>
-                  </dl><hr>
-                  <!--Ringkasan pengajuan-->
-                  <dl class="row">
-                    <dd class="col-sm-7">NIK Pemohon</dd>
-                    <!--Javascript ambil NIK pemohon-->
-                    <dt class="col-sm-5">3204000000000000</dt>
-                    <dd class="col-sm-7">Nama Pemohon</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">Ujang Saepulloh</dt>
-                    <dd class="col-sm-7">No Dokumen</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">3204111111111111</dt>
-                    <dt class="col-sm-7">Catatan</dt>
-                  </dl>
-                  <!--Catatan Selesai (statis)-->
-                  <p>Dokumen sudah selesai silakan cek email atau pilih tombol 'unduh dokumen' untuk mengunduh dokumen yang sudag selesai diajukan</p>
-                  <!--button unduh file dan riwayat-->
-                  <!-- <dl class="row">
-                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
-                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
-                  </dl> -->
-                  <a class="btn btn-riwayat-selesai" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-unduh-selesai" href="#" role="button">Unduh Dokumen</a>
-                </div>
-              </div>
-            </div>
-            <!--Card end-->
-
-            <!--Card start-->
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card border rounded">
-                <div class="card-header center card-selesai">
-                  <h5>Selesai</h5>
-                </div>
-                <div class="card-body">
-                  <!--Javascript disini ambil jenis dokumen-->
-                  <h5 class="card-title">Perubahan Biodata</h5>     
-                  <dl class="row">
-                    <!--Tanggal sama waktu pengajuan-->
-                    <dt class="col-sm-7">
-                      <i class="fas fa-calendar"></i>
-                      <!--Javascript ambil tanggal-->
-                      27 Januari 2023
-                    </dt>
-                    <dt class="col-sm-5">
-                      <i class="fas fa-clock"></i>
-                      <!--Javascript ambil waktu-->
-                      08:00 WIB
-                    </dt>
-                  </dl><hr>
-                  <!--Ringkasan pengajuan-->
-                  <dl class="row">
-                    <dd class="col-sm-7">NIK Pemohon</dd>
-                    <!--Javascript ambil NIK pemohon-->
-                    <dt class="col-sm-5">3204000000000000</dt>
-                    <dd class="col-sm-7">Nama Pemohon</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">Estri Puji Lestari</dt>
-                    <dd class="col-sm-7">No Dokumen</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">3204111111111111</dt>
-                    <dt class="col-sm-7">Catatan</dt>
-                  </dl>
-                  <!--Catatan Selesai (statis)-->
-                  <p>Dokumen sudah selesai silakan cek email atau pilih tombol 'unduh dokumen' untuk mengunduh dokumen yang sudag selesai diajukan</p>
-                  <!--button unduh file dan riwayat-->
-                  <!-- <dl class="row">
-                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
-                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
-                  </dl> -->
-                  <a class="btn btn-riwayat-selesai" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-unduh-selesai" href="#" role="button">Unduh Dokumen</a>
-                </div>
-              </div>
-            </div>
-            <!--Card end-->
-
-            <!--Card start-->
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card border rounded">
-                <div class="card-header center card-selesai">
-                  <h5>Selesai</h5>
-                </div>
-                <div class="card-body">
-                  <!--Javascript disini ambil jenis dokumen-->
-                  <h5 class="card-title">Perubahan Biodata</h5>     
-                  <dl class="row">
-                    <!--Tanggal sama waktu pengajuan-->
-                    <dt class="col-sm-7">
-                      <i class="fas fa-calendar"></i>
-                      <!--Javascript ambil tanggal-->
-                      27 Januari 2023
-                    </dt>
-                    <dt class="col-sm-5">
-                      <i class="fas fa-clock"></i>
-                      <!--Javascript ambil waktu-->
-                      08:00 WIB
-                    </dt>
-                  </dl><hr>
-                  <!--Ringkasan pengajuan-->
-                  <dl class="row">
-                    <dd class="col-sm-7">NIK Pemohon</dd>
-                    <!--Javascript ambil NIK pemohon-->
-                    <dt class="col-sm-5">3204000000000000</dt>
-                    <dd class="col-sm-7">Nama Pemohon</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">Agi Ayubi</dt>
-                    <dd class="col-sm-7">No Dokumen</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">3204111111111111</dt>
-                    <dt class="col-sm-7">Catatan</dt>
-                  </dl>
-                  <!--Catatan Selesai (statis)-->
-                  <p>Dokumen sudah selesai silakan cek email atau pilih tombol 'unduh dokumen' untuk mengunduh dokumen yang sudag selesai diajukan</p>
-                  <!--button unduh file dan riwayat-->
-                  <!-- <button type="button" class="btn btn-riwayat-selesai ml-1">Periksa Riwayat</button>
-                  <button type="button" class="btn btn-unduh-selesai ml-5">Unduh Dokumen</button> -->
-                  <a class="btn btn-riwayat-selesai" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-unduh-selesai" href="#" role="button">Unduh Dokumen</a>
-                </div>
-              </div>
-            </div>
-            <!--Card end-->
-
-          </div>
-          <!--Row card selesai-->
+          <!--Judul Form end-->
         </section>
       </div>
       <footer class="main-footer">
@@ -371,6 +210,45 @@
       </footer>
     </div>
   </div>
+
+    <!-- Modal PopUp start -->
+    <div class="modal fade" id="modalAktalahir" tabindex="-1" role="dialog" aria-labelledby="modalAktalahirTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLongTitle">Perhatian!</h5>
+              <a class="close" href="blankform.html" role="button"><span aria-hidden="true">&times;</span></a>
+              <!-- <button type="button" class="close" href="blankform.html" aria-label="Close"> -->
+            </div>
+            <div class="modal-body">
+              <p>1. Permohonan ini akan tercatat sebagai permohonan oleh akun aktif saat ini. Dengan ini saya sebagai
+                pemilik akun memahami Undang-Undang No. 23 Tahun 2006 Bab 12 yang berbunyi "Barang siapa dengan sengaja
+                melakukan pemalsuan identitas diri atau dokumen terhadap instansi pelaksana, maka dapat terancam hukuman
+                pidana 6 tahun atau denda sebesar 50 juta rupiah".
+              </p>
+              <p>2. Apabila di kemudian hari ternyata isian permohonan saya tidak benar, saya bersedia diproses secara hukum
+                dan dipidana penjara paling lama 6 (enam) tahun dan/atau dendapaling banyak Rp 75.000.000,00 (Tujuh Puluh
+                Lima Juta Rupiah) sesuai dengan Pasal 94 Undang-Undang Nomor 24 Tahun 2013, atau pidana penjara selama-lamanya
+                7 (tujuh) tahun penjara atas pelanggaran terhadap Pasal 242 Ayat 1 KUHP. Serta dokumen yang diterbitkan dari 
+                permohonan ini menjadi tidak sah.
+              </p>
+              <p>3. Apabila tidak dapat melampirkan surat lahir dari rumah sakit/bidan, silakan melengkapi berkas persyaratan 
+                Anda dengan mengunduh berkas Surat pertanggungjawaban mutlak kebenaran kelahiran yang tersemat pada formulir.
+              </p>
+              <p>4. Apabila tidak dapat melampirkan buku/akta nikah, silakan melengkapi berkas persayaratan anda dengan mengunduh 
+                berkas Surat pertanggungjawaban mutlak kebenaran suami istri yang tersemat pada formulir.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <!-- <a class="btn btn-secondary" href="blankform.html" role="button">Tutup</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <!-- <button type="button" class="btn btn-primary">Ya, Saya mengerti dan bersedia melanjutkan</button> -->
+              <a class="btn btn-primary" href="aktakelahiran.html" role="button">Ya, Saya mengerti dan bersedia melanjutkan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal PopUp end -->
 
   <!-- General JS Scripts -->
   <script src="assets/modules/jquery.min.js"></script>
@@ -394,8 +272,10 @@
   <script src="assets/js/page/forms-advanced-forms.js"></script>
   
   <!-- Template JS File -->
+  <script src="assets/js/popup.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/search.js"></script>
+
 </body>
 </html>

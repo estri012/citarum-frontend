@@ -156,6 +156,7 @@
                 <li><a class="nav-link" href="hilangkelahiran.html">Kehilangan/Kerusakan Akta Kelahiran</a></li><hr>
                 <li><a class="nav-link" href="hilangkematian.html">Kehilangan/Kerusakan Akta Kematian</a></li><hr>
                 <li><a class="nav-link" href="pengesahananak.html">Pengesahan atau Pengakuan Anak</a></li><hr>
+                <li><a class="nav-link" href="pengesahananak.html">Kehilangan/Kerusakan Akta Perkawinan dan Perceraian</a></li><hr>
                 <li><a class="nav-link" href="pengabsahan.html">Pengabsahan Akta</a></li><hr>
               </ul>
             </li>
@@ -163,21 +164,21 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-signature"></i> <span>Pendaftaran Penduduk</span></a>
               <ul class="dropdown-menu">
-                <hr><li><a class="nav-link" href="ktp.html">Cetak KTP-el</a></li><hr>
+                <hr><li><a class="nav-link" href="ktp.html">Cetak KTP-El</a></li><hr>
                 <li><a class="nav-link" href="kia.html">Cetak KIA (Kartu Identitas Anak)</a></li><hr>
                 <li><a class="nav-link" href="biodata.html">Pengajuan Biodata</a></li><hr>
                 <li><a class="nav-link" href="ubahbiodata.html">Perubahan Biodata</a></li><hr>
                 <li><a class="nav-link" href="numpang-kk.html">Numpang Kartu Keluarga</a></li><hr>
-                <li><a class="nav-link" href="gabung-kk.html">Gabung Kartu Keluarga karena perkawinan</a></li><hr>
+                <li><a class="nav-link" href="gabung-kk.html">Gabung Kartu Keluarga Karena Perkawinan</a></li><hr>
                 <li><a class="nav-link" href="pecah-kk.html">Pecah Kartu Keluarga</a></li><hr>
-                <li><a class="nav-link" href="pisah-kk.html">Pisah Kartu Keluarga karena perceraian</a></li><hr>
-                <li><a class="nav-link" href="cetakulang-kk.html">Cetak ulang Kartu Keluarga</a></li><hr>
-                <li><a class="nav-link" href="ubahalamat.html">Perubahan alamat/pindah antar kecamatan, kelurahan/RT</a></li><hr>
-                <li><a class="nav-link" href="datang-luar.html">Penduduk pendatang luar daerah</a></li><hr>
-                <li><a class="nav-link" href="pindah-luar.html">Pindah luar daerah</a></li><hr>
-                <li><a class="nav-link" href="batal-pindah.html">Batal pindah luar daerah</a></li><hr>
-                <li><a class="nav-link" href="kk-wna.html">Kartu Keluarga WNA tetap</a></li><hr>
-                <li><a class="nav-link" href="sukettinggal-wna.html">Surat Keterangan tempat tinggal WNA</a></li><hr>
+                <li><a class="nav-link" href="pisah-kk.html">Pisah Kartu Keluarga Karena Perceraian</a></li><hr>
+                <li><a class="nav-link" href="cetakulang-kk.html">Cetak Ulang Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="ubahalamat.html">Perubahan Alamat/Pindah Antar Kecamatan, kelurahan atau RT</a></li><hr>
+                <li><a class="nav-link" href="datang-luar.html">Penduduk Pendatang Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="pindah-luar.html">Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="batal-pindah.html">Batal Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="kk-wna.html">Kartu Keluarga WNA Tetap</a></li><hr>
+                <li><a class="nav-link" href="sukettinggal-wna.html">Surat Keterangan Tempat Tinggal WNA</a></li><hr>
               </ul>
             </li>
           </ul>
@@ -204,35 +205,55 @@
                 <option>Selesai</option>
               </select>
             </div>
-
-            <!-- <div style="margin-left:70%"><i class="fas fa-calendar" style="color:#3D6C53; font-size: large;"></i>
-            </div>
-            <div>
-              <input type="text" class="form-control datepicker">
-            </div> -->
           </div>
           <!--Row buat cards-->
           <div class="row">
             <!--KASIH JAVASCRIPT Kalau GA ADA PENGAJUAN-->
+
             <!--Card start-->
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-stats">
-                  <div class="card-stats-title" style="text-align: center; font-size: 20px;"><b>Perubahan Biodata</b>
-                  </div><hr>
-                    <div>
-                      <div class="pl-5"><b>No KK :</b></div>
-                      <div class="pb-2 pl-5"><b>NIK :</b></div>
-                      <div>
-                        <i class="fas fa-file-alt" style="display: flex; justify-content: center; font-size:64px;"></i>
-                      </div>
-                    </div>
+              <div class="card border rounded">
+                <div class="card-header center card-diajukan">
+                  <h5>Diajukan</h5>
                 </div>
-                <!--Status pengajuan-->
-                <div class="card-wrap">
-                  <div class="card-header pb-5">
-                    <h4 style="display: flex; justify-content: center; font-size: x-large;"><b>Belum Diproses</b></h4>
-                  </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Diajukan (dinamis), JavaScript ambil data dari DB-->
+                  <p>-</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-diajukan" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-hubungi-diajukan" href="#" role="button">Hubungi</a>
                 </div>
               </div>
             </div>
@@ -240,49 +261,200 @@
 
             <!--Card start-->
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-stats">
-                  <div class="card-stats-title" style="text-align: center; font-size: 20px;"><b>Perubahan Biodata</b>
-                  </div><hr>
-                    <div>
-                      <div class="pl-5"><b>No KK :</b></div>
-                      <div class="pb-2 pl-5"><b>NIK :</b></div>
-                      <div>
-                        <i class="fas fa-file-alt" style="display: flex; justify-content: center; font-size:64px;"></i>
-                      </div>
-                    </div>
+              <div class="card border rounded">
+                <div class="card-header center card-proses">
+                  <h5>Sedang Diproses</h5>
                 </div>
-                <!--Status pengajuan, UPDATE JAVASRIPTNYA-->
-                <div class="card-wrap">
-                  <div class="card-header pb-5">
-                    <h4 style="display: flex; justify-content: center; font-size: x-large;"><b>Sedang Diproses</b></h4>
-                  </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Agi Ayubi</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Proses (dinamis), JavaScript ambil data dari DB-->
+                  <p>-</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-hubungi-proses" href="#" role="button">Hubungi</a>
                 </div>
               </div>
             </div>
             <!--Card end-->
+
+            <!--Card start-->
             <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="card card-statistic-2">
-                <div class="card-stats">
-                  <div class="card-stats-title" style="text-align: center; font-size: 20px;"><b>Perubahan Biodata</b>
-                  </div><hr>
-                    <div>
-                      <div class="pl-5"><b>No KK :</b></div>
-                      <div class="pb-2 pl-5"><b>NIK :</b></div>
-                      <div>
-                        <i class="fas fa-file-alt" style="display: flex; justify-content: center; font-size:64px;"></i>
-                      </div>
-                    </div>
+              <div class="card border rounded">
+                <div class="card-header center card-perbaikan">
+                  <h5>Butuh Perbaikan</h5>
                 </div>
-                <!--Status pengajuan, UPDATE JAVASRIPTNYA-->
-                <div class="card-wrap">
-                  <div class="card-header pb-5">
-                    <h4 style="display: flex; justify-content: center; font-size: x-large;"><b>Ditolak</b></h4>
-                  </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Agi Ayubi</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Perbaikan (dinamis), JavaScript ambil data dari DB-->
+                  <p>Harap lengkapi unggah scan kartu keluarga asli, bukan fotocopy</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-perbaikan" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-hubungi-perbaikan" href="#" role="button">Hubungi</a>
                 </div>
               </div>
             </div>
             <!--Card end-->
+
+            <!--Card start-->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card border rounded">
+                <div class="card-header center card-unggah">
+                  <h5>Proses Unggah</h5>
+                </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Agi Ayubi</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Unggah (statis)-->
+                  <p>-</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-unggah" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-hubungi-unggah" href="#" role="button">Hubungi</a>
+                </div>
+              </div>
+            </div>
+            <!--Card end-->
+
+            <!--Card start-->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="card border rounded">
+                <div class="card-header center card-selesai">
+                  <h5>Selesai</h5>
+                </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Agi Ayubi</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Selesai (statis)-->
+                  <p>Dokumen sudah selesai silakan cek email atau pilih tombol 'unduh dokumen' untuk mengunduh dokumen yang sudag selesai diajukan</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-selesai" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-unduh-selesai" href="#" role="button">Unduh Dokumen</a>
+                </div>
+              </div>
+            </div>
+            <!--Card end-->
+
           </div>
           <!--Row card selesai-->
         </section>
@@ -317,6 +489,7 @@
   <script src="assets/js/page/forms-advanced-forms.js"></script>
   
   <!-- Template JS File -->
+  <script src="assets/js/popup.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/search.js"></script>
