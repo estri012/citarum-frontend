@@ -161,7 +161,7 @@ p, ul:not(.list-unstyled), ol {
 .custom-file-label {
   font-family: 'Source Sans Pro';
   background-color: #fdfdff;
-  border-color: #e2fae7; }
+  border-color: white; }
   .form-control:focus,
   .input-group-text:focus,
   .custom-select:focus,
@@ -635,6 +635,13 @@ select.form-control:not([size]):not([multiple]) {
   .card-unggah {
     background-color: #C75AFB;
     color: white;
+  }
+  .card-formulir {
+    background-color: #3D6C53;
+    color: white;
+  }
+  .card-body-formulir {
+    background-color: white;
   }
 
   .card .card-header, .card .card-body, .card .card-footer {

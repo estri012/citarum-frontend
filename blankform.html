@@ -201,7 +201,9 @@
 
           <!--Section Form start-->
           <div class="section-body">
-            <div class="card border rounded" style="border-radius: 60px;">
+
+            <!--Card Formulir Pendaftaran Akta Kelahiran-->
+            <div class="card border rounded">
               <div class="card-header center">
                 <h5>Formulir Pendaftaran Akta Kelahiran</h5>
               </div>  
@@ -216,19 +218,156 @@
                   <li>Jika anak belum memiliki NIK silakan lakukan pengajuan melaui <a href="biodata.html"><strong>Input Biodata.</strong></a></li>
                   <li>Apabila tidak dapat melampirkan surat lahir dari rumah sakit/bidan, silakan melengkapi berkas persyaratan Anda dengan 
                     mengunduh berkas sebagai berikut 
-                    : <a href="https://drive.google.com/drive/folders/16ayhnxZcpbFsF0CiC8BXO8nI9MJ9eJ24"><strong>Surat pertanggungjawaban mutlak kebenaran kelahiran (SPTJM kelahiran)</strong></a>
+                    : <a href="https://drive.google.com/file/d/1Hx9S1T1m1ASkSPM-j0SyP_8IgavObnsA/view" target="_blank"><strong>Surat pertanggungjawaban mutlak kebenaran kelahiran (SPTJM kelahiran)</strong></a>
                     dan sertakan materai bernilai cukup di atas tanda tangan.
                   </li>
                   <li>Apabila tidak dapat melampirkan buku/akta nikah, silakan melengkapi berkas persyaratan Anda dengan mengunduh berkas sebagai berikut :
-                    <a href="https://drive.google.com/drive/folders/16ayhnxZcpbFsF0CiC8BXO8nI9MJ9eJ24"><strong>Surat pertanggungjawaban mutlak kebenaran suami istri (SPTJM suami istri)</strong></a>
+                    <a href="https://drive.google.com/file/d/1hK9c0o86vK-15lXLtB-VFz2FdmWjzCI7/view" target="_blank"><strong>Surat pertanggungjawaban mutlak kebenaran suami istri (SPTJM suami istri)</strong></a>
                     dan sertakan materai bernilai cukup di atas tanda tangan.
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <form>
+            <!--Card Data Wilayah-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Wilayah</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Provinsi*</h6>
+                      <input class="form-control shadow-none" type="text" value="Jawa Barat" readonly>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kecamatan*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kabupaten*</h6>
+                      <input class="form-control shadow-none" type="text" value="Kabupaten Bandung" readonly>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kelurahan/Desa*</h6>
+                      <select name="desa" id="desa" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Pemohon-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Pemohon</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>No Telepon*</h6>
+                      <input type="tel" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Email*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Pelapor-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Pelapor</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No Kartu Keluarga*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No Dokumen Perjalanan</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kewarganegaraan*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Kolom card Data Saksi-->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card border rounded">
+                  <div class="card-header center card-formulir">
+                    <h5>Data Saksi I</h5>
+                  </div>
+                  <div class="card-body card-body-formulir">
+                        <div class="text-start px-4 mb-4">
+                          <h6>NIK*</h6>
+                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
+                        </div>
+                        <div class="text-start px-4 mb-4">
+                          <h6>Nama Lengkap*</h6>
+                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                        </div>
+                        <div class="text-start px-4 mb-4">
+                          <h6>No Kartu Keluarga*</h6>
+                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
+                        </div>
+                        <div class="text-start px-4 mb-4">
+                          <h6>Kewarganegaraan*</h6>
+                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                        </div>
+                        <div class="text-start px-4 mb-4">
+                          <h6>Kewarganegaraan*</h6>
+                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--End Form-->
+          </form>
+
+            <!--Section Form end-->
           </div>
-          <!--Section Form end-->
         </section>
+        <!--Main content end-->
       </div>
+      <!--Footer start-->
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2023 <div class="bullet"></div> Design By Disdukcapil Kab. Bandung Developer
@@ -237,6 +376,7 @@
           
         </div>
       </footer>
+      <!--Footer end-->
     </div>
   </div>
 

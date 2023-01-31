@@ -44,5 +44,5 @@ POP UP MODAL
 JS :
 
 $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
+  $('#myModal').trigger('focus')
 })
