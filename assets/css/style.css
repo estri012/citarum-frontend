@@ -612,7 +612,7 @@ select.form-control:not([size]):not([multiple]) {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 30px;
   border: none;
   position: relative;
   margin-bottom: 30px; }
@@ -1027,7 +1027,7 @@ table tr:hover .table-links {
     background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 3px; }
+    border-radius: 30px; }
 
 .modal-part {
   display: none; }

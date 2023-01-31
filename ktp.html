@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Cetak KTP-El &mdash; Disdukcapil Kab.Bandung</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <!--Navbar background all-->
+      <div class="navbar-bg"></div>
+      <!--Navbar horison ujung ke ujung start-->
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <!--Searchbar background start-->
+        <form class="form-inline mr-auto">
+          <!--Garis 3 horisontal menu expand-->
+          <ul class="navbar-nav mr-3">
+            <!--biar barnya bisa diklik-->
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars" style="color:white;"></i></a></li>
+            <!--icon search clickable DIUPDATE JAVASRIPTNYA-->
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <!--Elemen Search-->
+          <!--Javascriptnya belum sempurna-->
+          <div class="search-element">
+            <input class="form-control" id="myInput" type="search" placeholder="Pencarian" aria-label="Pencarian" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+          </div>
+        </form>
+        <!--Searchbar background end-->
+
+        <!--Navbar bagian kanan-->
+        <ul class="navbar-nav navbar-right">
+          <!--Droddwon message start-->
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i class="far fa-envelope"></i></a>
+            <!--isi dropdown-->
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pesan
+                <div class="float-right">
+                  <!--ACTION SETELAH DIBACA SEMUA, DIUPDATE JAVASCRIPTNYA-->
+                  <a href="#">Tandai sudah dibaca</a>
+                </div>
+              </div>
+              <!--list yang belum dibaca-->
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item">
+                  </div>
+                  <div class="dropdown-item">
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--Dropdown message end-->
+
+          <!--Dropdown notif start-->
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i class="far fa-bell"></i></a>
+            <!--isi dropdown-->
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifikasi
+                <div class="float-right">
+                  <!--ACTION SETELAH DIBACA SEMUA, DIUPDATE JAVASCRIPTNYA-->
+                  <a href="#">Tandai sudah dibaca</a>
+                </div>
+              </div>
+              <!--list yang belum dibaca-->
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item">
+                  </div>
+                  <div class="dropdown-item">
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--Dropdown notif end-->
+
+          <!--Dropdown icon user start-->
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, User</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!--Ke menu profil-->
+              <a href="#" class="dropdown-item has-icon">
+                <i class="far fa-user" style="color: #3D6C53;"></i> Profil
+              </a>
+              <!--Ke menu pengaturan-->
+              <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Pengaturan
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="login.php" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Keluar
+              </a>
+            </div>
+          </li>
+          <!--Dropdown icon user end-->
+        </ul>
+      </nav>
+      <!--Navbar horison ujung ke ujung end-->
+
+      <!--Sidebar all start-->
+      <div class="main-sidebar sidebar-style-2">
+        <!--Sidebar wrapper start-->
+        <aside id="sidebar-wrapper">
+          <!--Brand Disdukcaoil-->
+          <div class="sidebar-brand">
+            <a href="riwayatpermohonan-user.html">Disdukcapil Online</a>
+          </div>
+          <!--Simbol Kalau sidebar di minimize-->
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="riwayatpermohonan-user.html">DO</a>
+          </div>
+          <!--List menu sidebar start-->
+          <ul class="sidebar-menu">
+            <!--Sidebar Riwayat Pengajuan-->
+            <li class="dropdown">
+              <a href="riwayatpermohonan-user.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Riwayat Permohonan</span></a>
+            </li>
+            <!--Sidebar Dokumen Selesai-->
+            <li class="dropdown">
+              <a href="dokumenselesai-user.html" class="nav-link"><i class="fas fa-print"></i> <span>Dokumen Selesai</span></a>
+            </li>
+            <!--Sidebar Pencatatan Sipil-->
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-signature"></i> <span>Pencatatan Sipil</span></a>
+              <ul class="dropdown-menu">
+                <hr><li><a class="nav-link" href="aktakelahiran.html">Akta Kelahiran</a></li><hr>
+                <li><a class="nav-link" href="aktakematian.html">Akta Kematian</a></li><hr>
+                <li><a class="nav-link" href="aktaperkawinan.html">Akta Perkawinan</a></li><hr>
+                <li><a class="nav-link" href="aktaperceraian.html">Akta Perceraian</a></li><hr>
+                <li><a class="nav-link" href="hilangkelahiran.html">Kehilangan/Kerusakan Akta Kelahiran</a></li><hr>
+                <li><a class="nav-link" href="hilangkematian.html">Kehilangan/Kerusakan Akta Kematian</a></li><hr>
+                <li><a class="nav-link" href="pengesahananak.html">Pengesahan atau Pengakuan Anak</a></li><hr>
+                <li><a class="nav-link" href="hilangkawincerai.html">Kehilangan/Kerusakan Akta Perkawinan dan Perceraian</a></li><hr>
+                <li><a class="nav-link" href="pengabsahan.html">Pengabsahan Akta</a></li><hr>
+              </ul>
+            </li>
+            <!--Sidebar Pendaftaran Penduduk-->
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-signature"></i> <span>Pendaftaran Penduduk</span></a>
+              <ul class="dropdown-menu">
+                <hr><li><a class="nav-link" href="ktp.html">Cetak KTP-El</a></li><hr>
+                <li><a class="nav-link" href="kia.html">Cetak KIA (Kartu Identitas Anak)</a></li><hr>
+                <li><a class="nav-link" href="biodata.html">Pengajuan Biodata</a></li><hr>
+                <li><a class="nav-link" href="ubahbiodata.html">Perubahan Biodata</a></li><hr>
+                <li><a class="nav-link" href="numpang-kk.html">Numpang Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="gabung-kk.html">Gabung Kartu Keluarga Karena Perkawinan</a></li><hr>
+                <li><a class="nav-link" href="pecah-kk.html">Pecah Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="pisah-kk.html">Pisah Kartu Keluarga Karena Perceraian</a></li><hr>
+                <li><a class="nav-link" href="cetakulang-kk.html">Cetak Ulang Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="ubahalamat.html">Perubahan Alamat/Pindah Antar Kecamatan, kelurahan atau RT</a></li><hr>
+                <li><a class="nav-link" href="datang-luar.html">Penduduk Pendatang Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="pindah-luar.html">Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="batal-pindah.html">Batal Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="kk-wna.html">Kartu Keluarga WNA Tetap</a></li><hr>
+                <li><a class="nav-link" href="sukettinggal-wna.html">Surat Keterangan Tempat Tinggal WNA</a></li><hr>
+              </ul>
+            </li>
+          </ul>
+          <!--List menu sidebar end-->
+        </aside>
+        <!--Sidebar wrapper end-->
+      </div>
+      <!--Sidebar all end-->
+
+      <!-- Main Content -->
+      <div class="main-content" id="myDIV">
+        <!--Section isi main content-->
+        <section class="section">
+          <!--Judul Form-->
+          <div class="section-header">
+            <h1>Cetak KTP-El</h1>
+          </div>
+          <!--Judul Form end-->
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2023 <div class="bullet"></div> Design By Disdukcapil Kab. Bandung Developer
+        </div>
+        <div class="footer-right">
+          
+        </div>
+
+
+            <!-- Modal PopUp start -->
+    <div class="modal" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 800px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLongTitle">Perhatian!</h5>
+              <!-- <a class="close" href="blankform.html" role="button"></a> -->
+              <button type="button" onclick="history.back()" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <ol class="modal-text">
+                <li>Apabila di kemudian hari ternyata isian permohonan saya tidak benar, saya bersedia diproses secara hukum
+                  dan dipidana penjara paling lama 6 (enam) tahun dan/atau dendapaling banyak Rp 75.000.000,00 (Tujuh Puluh
+                  Lima Juta Rupiah) sesuai dengan Pasal 94 Undang-Undang Nomor 24 Tahun 2013, atau pidana penjara selama-lamanya
+                  7 (tujuh) tahun penjara atas pelanggaran terhadap Pasal 242 Ayat 1 KUHP. Serta dokumen yang diterbitkan dari 
+                  permohonan ini menjadi tidak sah.</li><br>
+                <li>Permohonan ini akan tercatat sebagai permohonan oleh akun aktif saat ini. Dengan ini saya sebagai
+                  pemilik akun memahami Undang-Undang No. 23 Tahun 2006 Bab 12 yang berbunyi "Barang siapa dengan sengaja
+                  melakukan pemalsuan identitas diri atau dokumen terhadap instansi pelaksana, maka dapat terancam hukuman
+                  pidana 6 tahun atau denda sebesar 50 juta rupiah".</li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <!-- <a class="btn btn-secondary" href="blankform.html" role="button">Tutup</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary" onclick="tutupmodal()">Ya, Saya mengerti dan bersedia melanjutkan</button>
+              <!-- <a class="btn btn-primary" href="aktakelahiran.html" role="button">Ya, Saya mengerti dan bersedia melanjutkan</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal PopUp end -->
+
+      </footer>
+    </div>
+  </div>
+
+
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/index.js"></script>
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/search.js"></script>
+
+</body>
+</html>

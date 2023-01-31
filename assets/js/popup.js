@@ -4,7 +4,7 @@
 //     $('#myInput').trigger('focus')
 //   })
 
-$('#modalCenter').modal({backdrop: 'static', keyboard: false});
+$('#modalCenter').modal({backdrop: 'static', keyboard: false}); //harus sebelum show, biar ga bisa diklik
 
 $('#modalCenter').modal('show');
 
