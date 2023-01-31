@@ -4,8 +4,10 @@
 //     $('#myInput').trigger('focus')
 //   })
 
-$('#modalCenter').modal('show')
+$('#modalCenter').modal({backdrop: 'static', keyboard: false});
+
+$('#modalCenter').modal('show');
 
 function tutupmodal() {
     $('#modalCenter').modal('hide')
-}
+};
