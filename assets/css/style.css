@@ -161,7 +161,7 @@ p, ul:not(.list-unstyled), ol {
 .custom-file-label {
   font-family: 'Source Sans Pro';
   background-color: #fdfdff;
-  border-color: white; }
+  border-color: #fdfdff; }
   .form-control:focus,
   .input-group-text:focus,
   .custom-select:focus,
