@@ -154,6 +154,22 @@ p, ul:not(.list-unstyled), ol {
   text-align: center;
 }
 
+.checkbox-sp {
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+  font-size: large;
+  font-weight: bold;
+}
+
+.button-center {
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items:center;
+}
+
+
 /* 3.2 Form */
 .form-control,
 .input-group-text,

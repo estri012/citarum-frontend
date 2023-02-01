@@ -644,18 +644,71 @@
                       <div class="card-body center"><h6>KTP-El Saksi II*</h6></div>
                     </div>
                   </div>
-                  <div class="col-sm-3"></div>
-                  <div class="col-sm-3"></div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpibu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpibu"
+                          onchange="document.getElementById('ktpibu-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>KTP-El Ibu*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="bukunikah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="bukunikah"
+                          onchange="document.getElementById('bukunikah-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Buku Nikah/Akta Nikah*</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpayah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpayah"
+                          onchange="document.getElementById('ktpayah-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>KTP-El Ayah*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="doktambahan-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="doktambahan"
+                          onchange="document.getElementById('doktambahan-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Dokumen Tambahan</h6></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check checkbox-sp">
+                  <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
+                </div><br>
+                <div class="button-center">
+                  <button class="btn btn-primary" type="submit" style="font-size: large;">Ajukan Permohonan</button>
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
             <!--End Form-->
           </form>
 
