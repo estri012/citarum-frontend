@@ -154,6 +154,10 @@ p, ul:not(.list-unstyled), ol {
   text-align: center;
 }
 
+.text-merah {
+  color: red;
+}
+
 .checkbox-sp {
   color: red;
   text-align: center;

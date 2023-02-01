@@ -208,7 +208,7 @@
                 <h5>Formulir Pendaftaran Akta Kelahiran</h5>
               </div>  
               <div class="card-body">
-                <h6>Catatan :</h6>
+                <h6 class="text-merah">Catatan :</h6>
                 <ul>
                   <li>Tanda (*) Dokumen wajib dilampirkan.</li>
                   <li>Tanda (**) Menyesuaikan dengan kebutuhan.</li>
@@ -326,6 +326,10 @@
                       <h6>No RT*</h6>
                       <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
                     </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RW*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="text-start px-4 mb-4">
@@ -376,10 +380,6 @@
                       </select>
                     </div>
                     <div class="text-start px-4 mb-4">
-                      <h6>No RW*</h6>
-                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                    </div>
-                    <div class="text-start px-4 mb-4">
                       <h6>Alamat*</h6>
                       <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
                     </div>
@@ -388,30 +388,8 @@
               </div>
             </div>
 
-            
-
-            
-
             <!--Kolom card Data Ortu-->
             <div class="row">
-              <!--Card Data Ayah-->
-              <div class="col-sm-6">
-                <div class="card border rounded">
-                  <div class="card-header center card-formulir">
-                    <h5>Data Ayah</h5>
-                  </div>
-                  <div class="card-body card-body-formulir">
-                        <div class="text-start px-4 mb-4">
-                          <h6>NIK Ayah Kandung Bayi/Anak*</h6>
-                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
-                        </div>
-                        <div class="text-start px-4 mb-4">
-                          <h6>Nama Lengkap Ayah Kandung*</h6>
-                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                        </div>
-                  </div>
-                </div>
-              </div>
               <!--Card Ibu-->
               <div class="col-sm-6">
                 <div class="card border rounded">
@@ -419,28 +397,46 @@
                     <h5>Data Ibu</h5>
                   </div>
                   <div class="card-body card-body-formulir">
-                        <div class="text-start px-4 mb-4">
-                          <h6>NIK Ibu Kandung Bayi/Anak*</h6>
-                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
-                        </div>
-                        <div class="text-start px-4 mb-4">
-                          <h6>Nama Lengkap Ibu Kandung*</h6>
-                          <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                        </div>
-                        <div class="text-start px-4 mb-4">
-                          <h6>Tanggal Perkawinan</h6>
-                          <div class="input-group">
-                            <input type="date" class="form-control datepicker border-bottom card-body-formulir">
-                          </div>
-                        </div>
-                        <div class="text-start px-4 mb-4">
-                          <h6>Kewarganegaraan Ibu Kandung*</h6>
-                          <select name="kewarganegaraan" id="kewarganegaraan" class="form-control border-bottom shadow-none selectric" required>
-                            <!--Kasih JS, ambil dari database-->
-                            <option value="wni">WNI</option>
-                            <option value="wna">WNA</option>
-                          </select>
-                        </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Ibu Kandung Bayi/Anak*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Ibu Kandung*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Tanggal Perkawinan</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir">
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kewarganegaraan Ibu Kandung*</h6>
+                      <select name="kewarganegaraan" id="kewarganegaraan" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option value="wni">WNI</option>
+                        <option value="wna">WNA</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card Data Ayah-->
+              <div class="col-sm-6">
+                <div class="card border rounded">
+                  <div class="card-header center card-formulir">
+                    <h5>Data Ayah</h5>
+                  </div>
+                  <div class="card-body card-body-formulir">
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Ayah Kandung Bayi/Anak*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Ayah Kandung*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -529,10 +525,10 @@
               <!--Kolom Card Saksi end-->
             </div>
 
-            <!--Card Data Pelapor Kelahiran-->
+            <!--Card Catatan Tambahan-->
             <div class="card border rounded">
               <div class="card-header center card-formulir">
-                <h5>Catatan</h5>
+                <h5>Catatan Tambahan</h5>
               </div>
               <div class="card-body card-body-formulir">
                 <div class="form-group">
