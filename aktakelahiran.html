@@ -274,6 +274,7 @@
                       <h6>Jenis Kelamin Bayi/Anak*</h6>
                       <select name="jeniskelamin" id="jeniskelamin" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="laki-laki">Laki-Laki</option>
                         <option value="perempuan">Perempuan</option>
                       </select>
@@ -283,6 +284,7 @@
                       <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
                       <select name="kotlahir" id="kotlahir" class="form-control border-bottom shadow-none selectric">
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value=""></option>
                       </select>
                     </div>
@@ -290,6 +292,7 @@
                       <h6>Jenis Kelahiran*</h6>
                       <select name="tempatlahir" id="tempatlahir" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="tunggal">Tunggal</option>
                         <option value="kembar2">Kembar Dua</option>
                         <option value="kembar3">Kembar Tiga</option>
@@ -301,6 +304,7 @@
                       <h6>Penolong Kelahiran*</h6>
                       <select name="tempatlahir" id="tempatlahir" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="dokter">Dokter</option>
                         <option value="bidan">Bidan/Perawat</option>
                         <option value="dukun">Dukun</option>
@@ -319,6 +323,7 @@
                       <h6>Kelurahan/Desa*</h6>
                       <select name="desa" id="desa" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value=""></option>
                       </select>
                     </div>
@@ -340,6 +345,7 @@
                       <h6>Tempat Dilahirkan Bayi/Anak*</h6>
                       <select name="tempatlahir" id="tempatlahir" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="rs">Rumah Sakit/Bersalin</option>
                         <option value="puskesmas">Puskesmas</option>
                         <option value="polindes">Polindes</option>
@@ -376,6 +382,7 @@
                       <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
                       <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric">
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value=""></option>
                       </select>
                     </div>
@@ -415,6 +422,7 @@
                       <h6>Kewarganegaraan Ibu Kandung*</h6>
                       <select name="kewarganegaraan" id="kewarganegaraan" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="wni">WNI</option>
                         <option value="wna">WNA</option>
                       </select>
@@ -525,19 +533,6 @@
               <!--Kolom Card Saksi end-->
             </div>
 
-            <!--Card Catatan Tambahan-->
-            <div class="card border rounded">
-              <div class="card-header center card-formulir">
-                <h5>Catatan Tambahan</h5>
-              </div>
-              <div class="card-body card-body-formulir">
-                <div class="form-group">
-                  <label for="catatanText">Catatan Tambahan</label>
-                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
-                </div>
-              </div>
-            </div>
-
             <!--Card Upload Dokumen-->
             <div class="card border rounded">
               <div class="card-header center card-formulir">
@@ -558,20 +553,20 @@
                           onchange="document.getElementById('surketlahir-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>Surat Keterangan Kelahiran*</h6></div>
+                      <div class="card-body center"><h6>Surat Keterangan Kelahiran dari buku KIA atau dari Dokter/Bidan/Penolong*</h6></div>
                     </div>
                     <div class="card border rounded">
                       <div class="card-header">
                         <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
                         <div class="center">
-                          <img id="ktpsaksi1-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                          <img id="bukunikah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
                         </div>
                         <div class="form-group center">
-                          <input type="file" id="ktpsaksi1"
-                          onchange="document.getElementById('ktpsaksi1-img').src=window.URL.createObjectURL(this.files[0])">
+                          <input type="file" id="bukunikah"
+                          onchange="document.getElementById('bukunikah-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>KTP-El Saksi I*</h6></div>
+                      <div class="card-body center"><h6>Buku Nikah Orang Tua/Akta Perkawinan*</h6></div>
                     </div>
                   </div>
                   <div class="col-sm-3">
@@ -579,27 +574,40 @@
                       <div class="card-header">
                         <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
                         <div class="center">
-                          <img id="kk-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                          <img id="kkortu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
                         </div>
                         <div class="form-group center">
-                          <input type="file" id="kk"
-                          onchange="document.getElementById('kk-img').src=window.URL.createObjectURL(this.files[0])">
+                          <input type="file" id="kkortu"
+                          onchange="document.getElementById('kkortu-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>Kartu Keluarga*</h6></div>
+                      <div class="card-body center"><h6>Kartu Keluarga Orang Tua*</h6></div>
                     </div>
                     <div class="card border rounded">
                       <div class="card-header">
                         <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
                         <div class="center">
-                          <img id="ktpsaksi2-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                          <img id="sptjmlahir-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
                         </div>
                         <div class="form-group center">
-                          <input type="file" id="ktpsaksi2"
-                          onchange="document.getElementById('ktpsaksi2-img').src=window.URL.createObjectURL(this.files[0])">
+                          <input type="file" id="sptjmlahir"
+                          onchange="document.getElementById('sptjmlahir-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>KTP-El Saksi II*</h6></div>
+                      <div class="card-body center"><h6>SPTJM Kebenaran Data Kelahiran</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="berkaslain-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="berkaslain"
+                          onchange="document.getElementById('berkaslain-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Berkas Pendukung Lainnya</h6></div>
                     </div>
                   </div>
                   <div class="col-sm-3">
@@ -620,14 +628,27 @@
                       <div class="card-header">
                         <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
                         <div class="center">
-                          <img id="bukunikah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                          <img id="sptjmpasangan-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
                         </div>
                         <div class="form-group center">
-                          <input type="file" id="bukunikah"
-                          onchange="document.getElementById('bukunikah-img').src=window.URL.createObjectURL(this.files[0])">
+                          <input type="file" id="sptjmpasangan"
+                          onchange="document.getElementById('sptjmpasangan-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>Buku Nikah/Akta Nikah*</h6></div>
+                      <div class="card-body center"><h6>SPTJM Pasangan Suami Istri</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="pasfotoanak-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="pasfotoanak"
+                          onchange="document.getElementById('pasfotoanak-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Pas Foto Anak Untuk Pengajuan Cetak KIA (Untuk anak diatas 5 tahun)</h6></div>
                     </div>
                   </div>
                   <div class="col-sm-3">
@@ -648,16 +669,29 @@
                       <div class="card-header">
                         <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
                         <div class="center">
-                          <img id="doktambahan-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                          <img id="suratpengantar-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
                         </div>
                         <div class="form-group center">
-                          <input type="file" id="doktambahan"
-                          onchange="document.getElementById('doktambahan-img').src=window.URL.createObjectURL(this.files[0])">
+                          <input type="file" id="suratpengantar"
+                          onchange="document.getElementById('suratpengantar-img').src=window.URL.createObjectURL(this.files[0])">
                         </div>
                       </div>
-                      <div class="card-body center"><h6>Dokumen Tambahan</h6></div>
+                      <div class="card-body center"><h6>Surat Pengantar RT</h6></div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Catatan Tambahan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Catatan Tambahan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="form-group">
+                  <label for="catatanText">Catatan Tambahan</label>
+                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
                 </div>
                 <div class="form-check checkbox-sp">
                   <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
@@ -667,6 +701,14 @@
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
             <!--End Form-->
           </form>
             <!--Section Form end-->

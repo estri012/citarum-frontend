@@ -202,7 +202,7 @@
           <!--Section Form start-->
           <div class="section-body">
 
-            <!--Card Formulir Pendaftaran Akta Kelahiran-->
+            <!--Card Formulir Pendaftaran Akta Kematian-->
             <div class="card border rounded">
               <div class="card-header center card-formulir">
                 <h5>Formulir Pendaftaran Akta Kematian</h5>
@@ -274,6 +274,7 @@
                       <h6>Wilayah Tempat Kelahiran Jenazah*</h6>
                       <select name="jeniskelamin" id="jeniskelamin" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="dalamnegeri">Dalam Negeri</option>
                         <option value="luarnegeri">Luar Negeri</option>
                       </select>
@@ -286,6 +287,7 @@
                       <h6>Kewarganegaraan Jenazah*</h6>
                       <select name="kewarganegaraan" id="kewarganegaraan" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="wni">WNI</option>
                         <option value="wna">WNA</option>
                       </select>
@@ -300,6 +302,7 @@
                       <h6>Jenis Kelamin Jenazah*</h6>
                       <select name="jeniskelamin" id="jeniskelamin" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="laki-laki">Laki-Laki</option>
                         <option value="perempuan">Perempuan</option>
                       </select>
@@ -318,6 +321,7 @@
                       <h6>Agama Jenazah*</h6>
                       <select name="agama" id="agama" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="islam">Islam</option>
                         <option value="kristen">Kristen</option>
                         <option value="katholik">Katholik</option>
@@ -352,6 +356,7 @@
                       <h6>Kecamatan Jenazah Saat Ini*</h6>
                       <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value=""></option>
                       </select>
                     </div>
@@ -373,6 +378,7 @@
                       <h6>Kelurahan/Desa Jenazah Saat Ini*</h6>
                       <select name="kelurahan" id="kelurahan" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value=""></option>
                       </select>
                     </div>
@@ -419,6 +425,7 @@
                       <h6>Sebab Kematian*</h6>
                       <select name="sebab" id="sebab" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="sakit">Sakit biasa/Tua</option>
                         <option value="pandemi">Pandemi/wabah penyakit</option>
                         <option value="kecelakaan">Kecelakaan</option>
@@ -431,6 +438,7 @@
                       <h6>Yang Menerangkan Kematian*</h6>
                       <select name="penerang" id="penerang" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="dokter">Dokter</option>
                         <option value="nakes">Tenaga Kesehatan</option>
                         <option value="polisi">Kepolisian</option>
@@ -452,7 +460,7 @@
                   </div>
                   <div class="card-body card-body-formulir">
                     <div class="text-start px-4 mb-4">
-                      <h6>NIK Ibu Kandung Jenazah*</h6>
+                      <h6>NIK Ibu Kandung Jenazah</h6>
                       <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
                     </div>
                     <div class="text-start px-4 mb-4">
@@ -463,6 +471,7 @@
                       <h6>Kewarganegaraan Ibu Kandung Jenazah*</h6>
                       <select name="kewarganegaraan" id="kewarganegaraan" class="form-control border-bottom shadow-none selectric" required>
                         <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
                         <option value="wni">WNI</option>
                         <option value="wna">WNA</option>
                       </select>
@@ -478,8 +487,8 @@
                   </div>
                   <div class="card-body card-body-formulir">
                     <div class="text-start px-4 mb-4">
-                      <h6>NIK Ayah Kandung Jenazah*</h6>
-                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                      <h6>NIK Ayah Kandung Jenazah</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16">
                     </div>
                     <div class="text-start px-4 mb-4">
                       <h6>Nama Lengkap Ayah Kandung Jenazah*</h6>
@@ -571,19 +580,6 @@
                 </div>
               </div>
               <!--Kolom Card Saksi end-->
-            </div>
-
-            <!--Card Catatan Tambahan-->
-            <div class="card border rounded">
-              <div class="card-header center card-formulir">
-                <h5>Catatan Tambahan</h5>
-              </div>
-              <div class="card-body card-body-formulir">
-                <div class="form-group">
-                  <label for="catatanText">Catatan Tambahan</label>
-                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
-                </div>
-              </div>
             </div>
 
             <!--Card Upload Dokumen-->
@@ -706,6 +702,19 @@
                       <div class="card-body center"><h6>Foto KTP Suami/Istri yang ditinggalkan (untuk pembuatan KK dan KTP Baru)</h6></div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Catatan Tambahan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Catatan Tambahan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="form-group">
+                  <label for="catatanText">Catatan Tambahan</label>
+                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
                 </div>
                 <div class="form-check checkbox-sp">
                   <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
