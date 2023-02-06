@@ -190,6 +190,542 @@
             <h1>Surat Keterangan Tempat Tinggal WNA</h1>
           </div>
           <!--Judul Form end-->
+
+          <!--Section Form start-->
+          <div class="section-body">
+
+            <!--Card Formulir Pendaftaran Akta Kelahiran-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Formulir Pendaftaran Akta Kelahiran</h5>
+              </div>  
+              <div class="card-body">
+                <h6 class="text-merah">Notes :</h6>
+                <ul>
+                  <li>(*) must be filled in by the applicant.</li>
+                  <li>(**) can be filled as needed.</li>
+                  <li>Unnecessary document can be left blank.</li>
+                  <li>All the files in the form of colored photos/pictures/originals (not photocopies), maximum file size of 1MB.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--Form isian start-->
+            <form>
+            <!--Card Data Pemohon-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Applicant Data</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Phone Number*</h6>
+                      <input type="tel" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Email*</h6>
+                      <input type="email" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Pelapor Kelahiran-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Personal Data</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>First Name*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Family Name*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Gender*</h6>
+                      <select name="jeniskelamin" id="jeniskelamin" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="laki-laki">Male</option>
+                        <option value="perempuan">Female</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Place of Birth*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Date of Birth*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Citizenhip*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nationality</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Religion*</h6>
+                      <select name="agama" id="agama" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Christian</option>
+                        <option value="katholik">Catholic</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="khonghucu">Khonghucu</option>
+                        <option value="lainnya">Another Religion</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Blood Type*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Marital Status*</h6>
+                      <select name="statkawin" id="statkawin" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="lajang">Single</option>
+                        <option value="menikah">Maried</option>
+                        <option value="cerai">Divorced</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Family Relationship Status*</h6>
+                      <select name="hubkel" id="hubkel" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="kepkel">Head of Family</option>
+                        <option value="suami">Husband</option>
+                        <option value="istri">Wife</option>
+                        <option value="anak">Child</option>
+                        <option value="menantu">Child in Law</option>
+                        <option value="cucu">Grand Child</option>
+                        <option value="ortu">Parents</option>
+                        <option value="mertua">Parents in Law</option>
+                        <option value="famili">Relative/Housemaid</option>
+                        <option value="lainnya">Others</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Education*</h6>
+                      <select name="pendidikan" id="pendidikan" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="sd">Elementary School</option>
+                        <option value="smp">Junior High School</option>
+                        <option value="sma">Senior High School</option>
+                        <option value="d1">Diploma</option>
+                        <option value="s1">Bachelor</option>
+                        <option value="s2">Master</option>
+                        <option value="s3">Philosophy of Doctor</option>
+                        <option value="lain">Others</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Profession*</h6>
+                      <select name="pekerjaan" id="pekerjaan" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="perdagangan">Trading & Industry</option>
+                        <option value="pertambangan">Forestry Mining & Energy</option>
+                        <option value="pekumum">Public Work</option>
+                        <option value="pertanian">Farming</option>
+                        <option value="keagamaan">Religion</option>
+                        <option value="perbankan">Bank & Financial</option>
+                        <option value="kesehatan">Health & Society</option>
+                        <option value="tourism">Tourism</option>
+                        <option value="transportasi">Transportation & Communication</option>
+                        <option value="kebudayaan">Culture & Education</option>
+                        <option value="lainlain">Others</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+
+            <!--Kolom card Data Ortu-->
+            <div class="row">
+              <!--Card Ibu-->
+              <div class="col-sm-6">
+                <div class="card border rounded">
+                  <div class="card-header center card-formulir">
+                    <h5>Mother's Biodata</h5>
+                  </div>
+                  <div class="card-body card-body-formulir">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Mother's Identification Number</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Mother's Name</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card Data Ayah-->
+              <div class="col-sm-6">
+                <div class="card border rounded">
+                  <div class="card-header center card-formulir">
+                    <h5>Father's Biodata</h5>
+                  </div>
+                  <div class="card-body card-body-formulir">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Father's Identification Number</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Father's Name</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Kolom Card Data Ortu end-->
+            </div>
+
+            <!--Card Data Imigrasi-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Immigration Data</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Came From*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Purpose of Arrival*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Passport Number*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Passport Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Passport Expiration Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Immigration Document*</h6>
+                      <select name="dokimigrasi" id="dokimigrasi" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="kitas">KITAS/Limited Stay Permit Card</option>
+                        <option value="kitap">KITAP/Permanent Stay Permit Card</option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Document Number*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Published Place*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Issued Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Document Expiration Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Place of First Arrival*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>First Arrival Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Self Report Certificate Number</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none">
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+
+            <!--Card Data Sponsor-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Sponsor's Biodata</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Sponsor's Name*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Sponsor's Type*</h6>
+                      <select name="tipesponsor" id="tipesponsor" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value="inter">International Organization</option>
+                        <option value="gov">Government</option>
+                        <option value="comp">Company</option>
+                        <option value="personal">Personal</option>
+                        <option value="none">None</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Sponsor's Address*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Registration Date*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Upload Dokumen-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>File Requirements</h5>
+                <h6>*Please upload photo/scan the real document, not photocopy</h6>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="surketlahir-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="surketlahir"
+                          onchange="document.getElementById('surketlahir-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Surat Keterangan Kelahiran dari buku KIA atau dari Dokter/Bidan/Penolong*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="bukunikah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="bukunikah"
+                          onchange="document.getElementById('bukunikah-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Buku Nikah Orang Tua/Akta Perkawinan*</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="kkortu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="kkortu"
+                          onchange="document.getElementById('kkortu-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Kartu Keluarga Orang Tua*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="sptjmlahir-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="sptjmlahir"
+                          onchange="document.getElementById('sptjmlahir-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>SPTJM Kebenaran Data Kelahiran</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="berkaslain-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="berkaslain"
+                          onchange="document.getElementById('berkaslain-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Berkas Pendukung Lainnya</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpibu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpibu"
+                          onchange="document.getElementById('ktpibu-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>KTP-El Ibu*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="sptjmpasangan-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="sptjmpasangan"
+                          onchange="document.getElementById('sptjmpasangan-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>SPTJM Pasangan Suami Istri</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="pasfotoanak-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="pasfotoanak"
+                          onchange="document.getElementById('pasfotoanak-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Pas Foto Anak Untuk Pengajuan Cetak KIA (Untuk anak diatas 5 tahun)</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpayah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpayah"
+                          onchange="document.getElementById('ktpayah-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>KTP-El Ayah*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="suratpengantar-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="suratpengantar"
+                          onchange="document.getElementById('suratpengantar-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Surat Pengantar RT</h6></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Catatan Tambahan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Catatan Tambahan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="form-group">
+                  <label for="catatanText">Catatan Tambahan</label>
+                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
+                </div>
+                <div class="form-check checkbox-sp">
+                  <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
+                </div><br>
+                <div class="button-center">
+                  <button class="btn btn-primary" type="submit" style="font-size: large;">Ajukan Permohonan</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!--End Form-->
+          </form>
+            <!--Section Form end-->
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
       </div>
       <footer class="main-footer">
