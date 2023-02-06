@@ -59,6 +59,7 @@ WARNA :
 #4BEA81  card header ijo terang
 #3D6C53  background ijo
 #e2fae7  ijo muda banget
+#AAD3AE  heading table
 
 RIWAYAT EDIT :
 26/01/23 First Commit

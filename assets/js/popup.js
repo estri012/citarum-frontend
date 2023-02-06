@@ -11,3 +11,5 @@ $('#modalCenter').modal('show');
 function tutupmodal() {
     $('#modalCenter').modal('hide')
 };
+
+

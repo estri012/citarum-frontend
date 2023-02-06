@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Riwayat Permohonan &mdash; Disdukcapil Kab.Bandung</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <!--Navbar background all-->
+      <div class="navbar-bg"></div>
+      <!--Navbar horison ujung ke ujung start-->
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <!--Searchbar background start-->
+        <form class="form-inline mr-auto">
+          <!--Garis 3 horisontal menu expand-->
+          <ul class="navbar-nav mr-3">
+            <!--biar barnya bisa diklik-->
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars" style="color:white;"></i></a></li>
+            <!--icon search clickable DIUPDATE JAVASRIPTNYA-->
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <!--Elemen Search-->
+          <!--Javascript belum sempurna-->
+          <div class="search-element">
+            <input class="form-control" id="myInput" type="search" placeholder="Pencarian" aria-label="Pencarian" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+          </div>
+        </form>
+        <!--Searchbar background end-->
+
+        <!--Navbar bagian kanan-->
+        <ul class="navbar-nav navbar-right">
+          <!--Droddwon message start-->
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i class="far fa-envelope"></i></a>
+            <!--isi dropdown-->
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Pesan
+                <div class="float-right">
+                  <!--ACTION SETELAH DIBACA SEMUA, DIUPDATE JAVASCRIPTNYA-->
+                  <a href="#">Tandai sudah dibaca</a>
+                </div>
+              </div>
+              <!--list yang belum dibaca-->
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item">
+                  </div>
+                  <div class="dropdown-item">
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--Dropdown message end-->
+
+          <!--Dropdown notif start-->
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i class="far fa-bell"></i></a>
+            <!--isi dropdown-->
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifikasi
+                <div class="float-right">
+                  <!--ACTION SETELAH DIBACA SEMUA, DIUPDATE JAVASCRIPTNYA-->
+                  <a href="#">Tandai sudah dibaca</a>
+                </div>
+              </div>
+              <!--list yang belum dibaca-->
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item">
+                  </div>
+                  <div class="dropdown-item">
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Lihat Semua <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <!--Dropdown notif end-->
+
+          <!--Dropdown icon user start-->
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, User</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!--Ke menu profil-->
+              <a href="#" class="dropdown-item has-icon">
+                <i class="far fa-user" style="color: #3D6C53;"></i> Profil
+              </a>
+              <!--Ke menu pengaturan-->
+              <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Pengaturan
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="login.php" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Keluar
+              </a>
+            </div>
+          </li>
+          <!--Dropdown icon user end-->
+        </ul>
+      </nav>
+      <!--Navbar horison ujung ke ujung end-->
+
+      <!--Sidebar all start-->
+      <div class="main-sidebar sidebar-style-2">
+        <!--Sidebar wrapper start-->
+        <aside id="sidebar-wrapper">
+          <!--Brand Disdukcaoil-->
+          <div class="sidebar-brand">
+            <a href="riwayatpermohonan-user.html">Disdukcapil Online</a>
+          </div>
+          <!--Simbol Kalau sidebar di minimize-->
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="riwayatpermohonan-user.html">DO</a>
+          </div>
+          <!--List menu sidebar start-->
+          <ul class="sidebar-menu">
+            <!--Sidebar Pengajuan-->
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-signature"></i> <span>Pengajuan Permohonan</span></a>
+              <ul class="dropdown-menu">
+                <hr><li><a class="nav-link" href="aktakelahiran.html">Akta Kelahiran</a></li><hr>
+                <li><a class="nav-link" href="aktakematian.html">Akta Kematian</a></li><hr>
+                <li><a class="nav-link" href="aktaperkawinan.html">Akta Perkawinan</a></li><hr>
+                <li><a class="nav-link" href="aktaperceraian.html">Akta Perceraian</a></li><hr>
+                <li><a class="nav-link" href="hilangakta.html">Kehilangan/Kerusakan Akta</a></li><hr>
+                <li><a class="nav-link" href="pengesahananak.html">Pengesahan atau Pengakuan Anak</a></li><hr>
+                <li><a class="nav-link" href="pengabsahan.html">Pengabsahan Akta</a></li><hr>
+                <li><a class="nav-link" href="ktp.html">Cetak KTP-El</a></li><hr>
+                <li><a class="nav-link" href="kia.html">Cetak KIA (Kartu Identitas Anak)</a></li><hr>
+                <li><a class="nav-link" href="biodata.html">Pengajuan Biodata</a></li><hr>
+                <li><a class="nav-link" href="ubahbiodata.html">Perubahan Biodata</a></li><hr>
+                <li><a class="nav-link" href="numpang-kk.html">Numpang Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="gabung-kk.html">Gabung Kartu Keluarga Karena Perkawinan</a></li><hr>
+                <li><a class="nav-link" href="pecah-kk.html">Pecah Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="pisah-kk.html">Pisah Kartu Keluarga Karena Perceraian</a></li><hr>
+                <li><a class="nav-link" href="cetakulang-kk.html">Cetak Ulang Kartu Keluarga</a></li><hr>
+                <li><a class="nav-link" href="ubahalamat.html">Perubahan Alamat/Pindah Antar Kecamatan, kelurahan atau RT</a></li><hr>
+                <li><a class="nav-link" href="datang-luar.html">Penduduk Pendatang Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="pindah-luar.html">Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="batal-pindah.html">Batal Pindah Luar Daerah</a></li><hr>
+                <li><a class="nav-link" href="kk-wna.html">Kartu Keluarga WNA Tetap</a></li><hr>
+                <li><a class="nav-link" href="sukettinggal-wna.html">Surat Keterangan Tempat Tinggal WNA</a></li><hr>
+              </ul>
+            </li>
+            <!--Sidebar Riwayat Pengajuan-->
+            <li class="dropdown">
+              <a href="riwayatpermohonan-user.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Riwayat Permohonan</span></a>
+            </li>
+            <!--Sidebar Dokumen Selesai-->
+            <li class="dropdown">
+              <a href="dokumenselesai-user.html" class="nav-link"><i class="fas fa-print"></i> <span>Dokumen Selesai</span></a>
+            </li>
+          </ul>
+          <!--List menu sidebar end-->
+        </aside>
+        <!--Sidebar wrapper end-->
+      </div>
+      <!--Sidebar all end-->
+
+      <!-- Main Content -->
+      <div class="main-content" id="myDIV">
+        <!--Section isi main content-->
+        <section class="section">
+          <!--Judul Form-->
+          <div class="section-header">
+            <h1>Riwayat Permohonan</h1>
+            <!--Filter pencarian, BELUM DIUPDATE JSnya-->
+            <div style="margin-left:73%">
+              <select class="form-control border">
+                <option>Semua Status</option>
+                <option>Belum Diproses</option>
+                <option>Sedang Diproses</option>
+                <option>Perbaikan</option>
+                <option>Selesai</option>
+              </select>
+            </div>
+          </div>
+          <div class="card border rounded">
+            <div class="card-body">
+                <span style='font-size:30px; font-weight: bolder;'><a href="riwayatpermohonan-user.html">&#8592;</a>
+                Riwayat Dokumen 3204500000000000
+                </span>
+            </div>
+          </div>
+          <!--Row buat cards-->
+          <div class="row">
+            <!--KASIH JAVASCRIPT Kalau GA ADA PENGAJUAN-->
+
+            <!--Card start-->
+            <div class="col-sm-6">
+                <!--Card Riwayat Permohonan-->
+                <div class="col-sm-12">
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                          <h5>Riwayat Permohonan</h5>
+                        </div>
+                        <div class="card-body">
+                          <!--Javascript disini ambil jenis dokumen-->   
+                          <dl class="row">
+                            <!--Tanggal sama waktu pengajuan-->
+                            <dt class="col-sm-7">
+                              <i class="fas fa-calendar"></i>
+                              <!--Javascript ambil tanggal-->
+                              27 Januari 2023
+                            </dt>
+                            <dt class="col-sm-5">
+                              <i class="fas fa-clock"></i>
+                              <!--Javascript ambil waktu-->
+                              08:00 WIB
+                            </dt>
+                          </dl><hr>
+                          <!--Ringkasan pengajuan-->
+                          <dl class="row">
+                            <dd class="col-sm-7">NIK Pemohon</dd>
+                            <!--Javascript ambil NIK pemohon-->
+                            <dt class="col-sm-5">3204000000000000</dt>
+                            <dd class="col-sm-7">Nama Pemohon</dd>
+                            <!--Javascript ambil Nama pemohon-->
+                            <dt class="col-sm-5">Ujang Saepulloh</dt>
+                            <dd class="col-sm-7">No Dokumen</dd>
+                            <!--Javascript ambil Nama pemohon-->
+                            <dt class="col-sm-5">3204111111111111</dt>
+                            <dt class="col-sm-7">Catatan</dt>
+                          </dl>
+                          <!--Catatan Diajukan (dinamis), JavaScript ambil data dari DB-->
+                          <p>-</p>
+                          <!--button unduh file, riwayat, hubungi-->
+                          <!-- <dl class="row">
+                            <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                            <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                          </dl> -->
+                          <hr>
+                          <dl class="row">
+                            <p class="col-sm-7">27 Januari 2023</p>
+                            <p class="col-sm-5">08:05:30</p>
+                            <p class="col-sm-7" style="font-weight: bold;">Pengajuan Permohonan</p>
+                            <p class="col-sm-7">27 Januari 2023</p>
+                            <p class="col-sm-5">10:00:30</p>
+                            <p class="col-sm-7" style="font-weight: bold;">Permohonan diverifikasi oleh operator</p>
+                            <p class="col-sm-7" >Bagus</p>
+                          </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--Card Riwayat Berkas-->
+                <div class="col-sm-12">
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                          <h5>Riwayat Berkas</h5>
+                        </div>
+                        <div class="card-body">
+                          <!--Javascript disini ambil jenis dokumen-->
+                          <h5 class="card-title">Perubahan Biodata</h5>     
+                          <dl class="row">
+                            <!--Tanggal sama waktu pengajuan-->
+                            <dt class="col-sm-7">
+                              <i class="fas fa-calendar"></i>
+                              <!--Javascript ambil tanggal-->
+                              27 Januari 2023
+                            </dt>
+                            <dt class="col-sm-5">
+                              <i class="fas fa-clock"></i>
+                              <!--Javascript ambil waktu-->
+                              08:00 WIB
+                            </dt>
+                          </dl><hr>
+                          <!--Ringkasan pengajuan-->
+                          <dl class="row">
+                            <dd class="col-sm-7">NIK Pemohon</dd>
+                            <!--Javascript ambil NIK pemohon-->
+                            <dt class="col-sm-5">3204000000000000</dt>
+                            <dd class="col-sm-7">Nama Pemohon</dd>
+                            <!--Javascript ambil Nama pemohon-->
+                            <dt class="col-sm-5">Ujang Saepulloh</dt>
+                            <dd class="col-sm-7">No Dokumen</dd>
+                            <!--Javascript ambil Nama pemohon-->
+                            <dt class="col-sm-5">3204111111111111</dt>
+                            <dt class="col-sm-7">Catatan</dt>
+                          </dl>
+                          <!--Catatan Diajukan (dinamis), JavaScript ambil data dari DB-->
+                          <p>-</p>
+                          <!--button unduh file, riwayat, hubungi-->
+                          <!-- <dl class="row">
+                            <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                            <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                          </dl> -->
+                          <a class="btn btn-riwayat-diajukan" href="#" role="button">Periksa Riwayat</a>
+                          <a class="btn btn-hubungi-diajukan" href="#" role="button">Hubungi</a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <!--Card end-->
+
+            <!--Card start-->
+            <div class="col-sm-6">
+              <div class="card border rounded">
+                <div class="card-header center card-formulir">
+                  <h5>Detail Permohonan</h5>
+                </div>
+                <div class="card-body">
+                  <!--Javascript disini ambil jenis dokumen-->
+                  <h5 class="card-title">Perubahan Biodata</h5>     
+                  <dl class="row">
+                    <!--Tanggal sama waktu pengajuan-->
+                    <dt class="col-sm-7">
+                      <i class="fas fa-calendar"></i>
+                      <!--Javascript ambil tanggal-->
+                      27 Januari 2023
+                    </dt>
+                    <dt class="col-sm-5">
+                      <i class="fas fa-clock"></i>
+                      <!--Javascript ambil waktu-->
+                      08:00 WIB
+                    </dt>
+                  </dl><hr>
+                  <!--Ringkasan pengajuan-->
+                  <dl class="row">
+                    <dd class="col-sm-7">NIK Pemohon</dd>
+                    <!--Javascript ambil NIK pemohon-->
+                    <dt class="col-sm-5">3204000000000000</dt>
+                    <dd class="col-sm-7">Nama Pemohon</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">Agi Ayubi</dt>
+                    <dd class="col-sm-7">No Dokumen</dd>
+                    <!--Javascript ambil Nama pemohon-->
+                    <dt class="col-sm-5">3204111111111111</dt>
+                    <dt class="col-sm-7">Catatan</dt>
+                  </dl>
+                  <!--Catatan Proses (dinamis), JavaScript ambil data dari DB-->
+                  <p>-</p>
+                  <!--button unduh file, riwayat, hubungi-->
+                  <!-- <dl class="row">
+                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
+                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
+                  </dl> -->
+                  <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
+                  <a class="btn btn-hubungi-proses" href="#" role="button">Hubungi</a>
+                </div>
+              </div>
+            </div>
+            <!--Card end-->
+
+
+
+          </div>
+          <!--Row card selesai-->
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2023 <div class="bullet"></div> Design By Disdukcapil Kab. Bandung Developer
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/index.js"></script>
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/search.js"></script>
+</body>
+</html>
