@@ -154,6 +154,12 @@ p, ul:not(.list-unstyled), ol {
   text-align: center;
 }
 
+.card-text.text-riwayat{
+  font-size: 28px;
+  color: #3D6C53;
+  font-weight: bold;
+}
+
 .text-merah {
   color: red;
 }
@@ -175,6 +181,8 @@ p, ul:not(.list-unstyled), ol {
 
 
 /* 3.2 Form */
+
+
 .form-control,
 .input-group-text,
 .custom-select,
@@ -229,6 +237,16 @@ select.form-control:not([size]):not([multiple]) {
     background-image: url("../img/mastercard.png"); }
   .form-control.creditcard.visa {
     background-image: url("../img/visa.png"); }
+
+/* Text Area Modal Tolak*/
+.form-control-Ta{
+  border-color: #010113;
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 .form-group {
   margin-bottom: 25px; }
@@ -1261,7 +1279,7 @@ h6 .badge {
     font-size: 12px; }
   .btn.btn-icon .ion, .btn.btn-icon .fas, .btn.btn-icon .far, .btn.btn-icon .fab, .btn.btn-icon .fal {
     margin-left: 0 !important;
-    font-size: 12px; }
+    /*font-size: 12px;*/ }
   .btn.btn-icon.icon-left .ion, .btn.btn-icon.icon-left .fas, .btn.btn-icon.icon-left .far, .btn.btn-icon.icon-left .fab, .btn.btn-icon.icon-left .fal {
     margin-right: 3px; }
   .btn.btn-icon.icon-right .ion, .btn.btn-icon.icon-right .fas, .btn.btn-icon.icon-right .far, .btn.btn-icon.icon-right .fab, .btn.btn-icon.icon-right .fal {
@@ -2206,6 +2224,22 @@ blockquote {
 
 .ion {
   font-size: 15px; }
+
+.fas.fa-arrow-left {
+  font-size: 30px; 
+  color: #3D6C53;
+}
+
+.fas.fa-exclamation-triangle{
+  font-size: 30px; 
+  color: #3D6C53;
+}
+
+.fas.fa-file-alt.fa-2x{
+  font-size: 30px; 
+  color: #3D6C53;
+  
+}
 
 .fas, .fab, .fal {
   font-size: 13px; 
