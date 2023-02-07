@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Hubungi Warga &mdash; Disdukcapil Kab.Bandung</title>
+  <title>Permohonan ditolak Operator &mdash; Disdukcapil Kab.Bandung</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -210,7 +210,7 @@
                     <a href="#" onclick="history.back()" class="btn btn-icon ml-3 mt-1"><i class="fas fa-arrow-left fa-lg"></i></a>
                     <i class="fas fa-file-alt fa-2x ml-2 mt-1"></i>
                     <div class="card-text text-riwayat ml-4" id="textJudulHalaman">
-                        Hubungi Warga - Dokumen {}
+                        Permohonan ditolak Operator - Dokumen {}
                     </div>
                 </div>
                 </div>
@@ -278,6 +278,71 @@
                     <!-- Riwayat permohonan end -->
 
                     <!-- Riwayat Berkas -->
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                            <h5>Riwayat Berkas</h5>
+                        </div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                <!--Javascript ambil NIK pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">Nama Pemohon</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                <!--Javascript ambil NIK pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">Nama Pemohon</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- Riwayat Berkas end-->
+
+                    <!-- Tombol verifikasi/tolak -->
+                    <dl class="row" id="rowVerifTolak" style="display: none;">
+                        <dd class="col-sm-6">
+                          <button class="btn btn-primary float-right" id="btnVerif1" onclick="BukaModalVerif()" style="font-size: large;">Verifikasi</button>
+                        </dd>
+                        <dt class="col-sm-6">
+                          <button class="btn btn-danger" id="btnVerif2" onclick="TolakModal()" style="font-size: large;">Tolak</button>
+                        </dt>
+                    </dl>
+                    <dl class="row" id="rowHubungiAjuan">
+                      <dd class="col-sm-6">
+                        <button class="btn btn-primary float-right" id="btnVerif3" onclick="location.href='hubungi-warga.html'" style="font-size: large;">Hubungi Warga</button>
+                      </dd>
+                      <dt class="col-sm-6">
+                        <button class="btn btn-primary" id="btnVerif4" onclick="location.href='unggah-dokumen.html'" style="font-size: large;">Perbaikan Ajuan</button>
+                      </dt>
+                    </dl>
+                    <dl class="row" id="rowPermohonanPengajuan">
+                      <dd class="col-sm-6">
+                        <button class="btn btn-primary float-right" id="btnVerif5" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Permohonan</button>
+                      </dd>
+                      <dt class="col-sm-6">
+                        <button class="btn btn-danger" id="btnVerif6" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Pengaduan</button>
+                      </dt>
+                    </dl>
+                    <!-- Tombol verifikasi/tolak end -->
+                </div>
+                <!-- Kolom Kiri end-->
+
+                <!-- Kolom Kanan -->
+                <div class="col-sm-6">
+                    <!-- Detail Permohonan -->
                     <div class="card border rounded">
                         <div class="card-header center card-formulir">
                             <h5>Detail Permohonan</h5>
@@ -368,48 +433,6 @@
                                     <dt class="col-sm-5">3204111111111111</dt>
                                 </dl>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Riwayat Berkas end-->
-
-                    <!-- Tombol verifikasi/tolak -->
-                    <dl class="row" id="rowVerifTolak" style="display: none;">
-                        <dd class="col-sm-6">
-                          <button class="btn btn-primary float-right" id="btnVerif1" onclick="BukaModalVerif()" style="font-size: large;">Verifikasi</button>
-                        </dd>
-                        <dt class="col-sm-6">
-                          <button class="btn btn-danger" id="btnVerif2" onclick="TolakModal()" style="font-size: large;">Tolak</button>
-                        </dt>
-                    </dl>
-                    <dl class="row" id="rowHubungiAjuan" style="visibility: visible;">
-                      <dd class="col-sm-6">
-                        <button class="btn btn-primary float-right" id="btnVerif3" onclick="location.href='hubungi-warga.html'" style="font-size: large;">Hubungi Warga</button>
-                      </dd>
-                      <dt class="col-sm-6">
-                        <button class="btn btn-primary" id="btnVerif4" onclick="location.href='unggah-dokumen.html'" style="font-size: large;">Perbaikan Ajuan</button>
-                      </dt>
-                    </dl>
-                    <dl class="row" id="rowPermohonanPengajuan" style="visibility: visible;">
-                      <dd class="col-sm-6">
-                        <button class="btn btn-primary float-right" id="btnVerif5" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Permohonan</button>
-                      </dd>
-                      <dt class="col-sm-6">
-                        <button class="btn btn-danger" id="btnVerif6" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Pengaduan</button>
-                      </dt>
-                    </dl>
-                    <!-- Tombol verifikasi/tolak end -->
-                </div>
-                <!-- Kolom Kiri end-->
-
-                <!-- Kolom Kanan -->
-                <div class="col-sm-6">
-                    <!-- Detail Permohonan -->
-                    <div class="card border rounded">
-                        <div class="card-header center card-formulir">
-                            <h5>Percakapan</h5>
-                        </div>
-                        <div class="card-body">
-                            
                         </div>
                         <div class="card-footer">
                             Card footer
