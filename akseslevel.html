@@ -199,6 +199,7 @@
                         <th>
                             <a href="#" class="btn btn-sm"><span class="fa fa-eye"></span></a>
                             <a href="#" class="btn btn-sm"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm"><span class="fa fa-key"></span></a>
                             <span data-title="administrator" href="#" class="btn btn-sm btn-delete"><span class="fa fa-trash"></span></span>
                         </th>
                     </tr>
@@ -208,9 +209,10 @@
                       <td>Aktif</td>
                       <td>Administrator</td>
                       <td>
-                        <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                            <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span></span>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                          <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalHakAkses"><span class="fa fa-key"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
                       </td>
                     </tr>
                     <tr>
@@ -219,9 +221,10 @@
                         <td>Aktif</td>
                         <td>Verifikator</td>
                         <td>
-                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                              <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
-                              <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span></span>
+                            <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                            <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalTambahHakAkses"><span class="fa fa-key"></span></a>
+                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
                         </td>
                     </tr>
                     <tr>
@@ -230,9 +233,10 @@
                         <td>Aktif</td>
                         <td>Operator</td>
                         <td>
-                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                              <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
-                              <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span></span>
+                            <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                            <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalTambahHakAkses"><span class="fa fa-key"></span></a>
+                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
                         </td>
                     </tr>
                     <tr>
@@ -241,9 +245,10 @@
                         <td>Aktif</td>
                         <td>Customer Service</td>
                         <td>
-                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                              <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
-                              <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span></span>
+                            <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                            <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalTambahHakAkses"><span class="fa fa-key"></span></a>
+                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
                         </td>
                     </tr>
                     <tr>
@@ -252,57 +257,17 @@
                         <td>Aktif</td>
                         <td>User</td>
                         <td>
-                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                              <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
-                              <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span></span>
+                            <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                            <a href="ubahakseslevel.html" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalTambahHakAkses"><span class="fa fa-key"></span></a>
+                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
                         </td>
                     </tr>
                 </table>
             </div>
           </div>
         </div>
-
-
-
         </section>
-
-        <!--Modal Pop Up Tambah Level Start (Belum Ada JS)-->
-        <div class="modal fade" id="modalTambahLevel" tabindex="-1" role="dialog" aria-labelledby="modalTambahLevelTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalTambahLevelTitle">Tambah Level</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="text-start px-4 mb-4">
-                  <p>Nama Level</p>
-                  <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                </div>
-                <div class="text-start px-4 mb-4">
-                  <p>Keterangan</p>
-                  <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                </div>
-                <div class="text-start px-4 mb-4">
-                  <p>Status</p>
-                  <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
-                    <!--Kasih JS, ambil dari database-->
-                    <option selected></option>
-                    <option value="aktif">Aktif</option>
-                    <option value="nonaktif">Non Aktif</option>
-                  </select>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary">Simpan</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Modal Pop Up end-->
       </div>
       <footer class="main-footer">
         <div class="footer-left">
@@ -315,6 +280,65 @@
     </div>
   </div>
 
+  <!--Modal Pop Up Tambah Level Start (Belum Ada JS)-->
+  <div class="modal fade" id="modalTambahLevel" tabindex="-1" role="dialog" aria-labelledby="modalTambahLevelTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTambahLevelTitle">Tambah Level</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-start px-4 mb-4">
+            <p>Nama Level</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Keterangan</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Status</p>
+            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="aktif">Aktif</option>
+              <option value="nonaktif">Non Aktif</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
+
+  <!--Modal Pop Up Hapus Pengguna (Belum Ada JS)-->
+  <div class="modal fade" id="modalHapusAkses" tabindex="-1" role="dialog" aria-labelledby="modalHapusAksesTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHapusAksesTitle">Verifikasi Penghapusan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">Apakah Anda ingin menghapus User Level terkait?
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+          <button type="button" class="btn btn-primary">Ya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
+
+  
 
 
   <!-- General JS Scripts -->
