@@ -190,8 +190,161 @@
             <h1>Cetak Ulang Kartu Keluarga</h1>
           </div>
           <!--Judul Form end-->
+          <!--Card Formulir Pendaftaran Akta Kelahiran-->
+          <div class="card border rounded">
+            <div class="card-header center card-formulir">
+              <h5>Formulir Pendaftaran Akta Kelahiran</h5>
+            </div>  
+            <div class="card-body">
+              <h6 class="text-merah">Catatan :</h6>
+              <ul>
+                <li>Tanda (*) Dokumen wajib dilampirkan.</li>
+                <li>Tanda (**) Menyesuaikan dengan kebutuhan.</li>
+                <li>Dokumen tambahan yang tidak diperlukan, boleh dikosongkan.</li>
+                <li>Semua file berbentuk foto atau gambar yang berwarna/asli (bukan hasil fotokopi) dengan ukaran file tidak lebih dari 1MB.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card border rounded">
+            <div class="card-header center card-formulir">
+              <h5>Data Pemohon</h5>
+            </div>
+            <div class="card-body card-body-formulir">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="text-start px-4 mb-4">
+                    <h6>No Telepon*</h6>
+                    <input type="tel" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                  </div>
+                  <div class="text-start px-4 mb-4">
+                    <h6>Email*</h6>
+                    <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                  </div>
+                  <div class="text-start px-4 mb-4">
+                    <h6>Nama lengkap Pemohon*</h6>
+                    <input type="email" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="text-start px-4 mb-4">
+                    <h6>Nik Pemohon*</h6>
+                    <input type="email" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                  </div>
+                  <div class="text-start px-4 mb-4">
+                    <h6>No KK*</h6>
+                    <input type="email" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                  </div>
+                  <div class="text-start px-4 mb-4">
+                    <h6>Warga Negara*</h6>
+                    <input type="email" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Card Upload Dokumen-->
+          <div class="card border rounded">
+            <div class="card-header center card-formulir">
+              <h5>Berkas Persyaratan</h5>
+              <h6>*Unggah foto/scan Dokumen Asli, bukan fotocopy</h6>
+            </div>
+            <div class="card-body card-body-formulir">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card border rounded">
+                    <div class="card-header">
+                      <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                      <div class="center">
+                        <img id="surketlahir-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                      </div>
+                      <div class="form-group center">
+                        <input type="file" id="surketlahir"
+                        onchange="document.getElementById('surketlahir-img').src=window.URL.createObjectURL(this.files[0])">
+                      </div>
+                    </div>
+                    <div class="card-body center"><h6>Surat Keterangan Kelahiran dari buku KIA atau dari Dokter/Bidan/Penolong*</h6></div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card border rounded">
+                    <div class="card-header">
+                      <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                      <div class="center">
+                        <img id="kkortu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                      </div>
+                      <div class="form-group center">
+                        <input type="file" id="kkortu"
+                        onchange="document.getElementById('kkortu-img').src=window.URL.createObjectURL(this.files[0])">
+                      </div>
+                    </div>
+                    <div class="card-body center"><h6>Kartu Keluarga Orang Tua*</h6></div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card border rounded">
+                    <div class="card-header">
+                      <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                      <div class="center">
+                        <img id="ktpibu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                      </div>
+                      <div class="form-group center">
+                        <input type="file" id="ktpibu"
+                        onchange="document.getElementById('ktpibu-img').src=window.URL.createObjectURL(this.files[0])">
+                      </div>
+                    </div>
+                    <div class="card-body center"><h6>KTP-El Ibu*</h6></div>
+                  </div>
+
+                </div>
+                <div class="col-sm-3">
+                  <div class="card border rounded">
+                    <div class="card-header">
+                      <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                      <div class="center">
+                        <img id="ktpibu-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                      </div>
+                      <div class="form-group center">
+                        <input type="file" id="ktpibu"
+                        onchange="document.getElementById('ktpibu-img').src=window.URL.createObjectURL(this.files[0])">
+                      </div>
+                    </div>
+                    <div class="card-body center"><h6>KTP-El Ibu*</h6></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Card Upload Dokumen-->
+          <div class="card border rounded">
+            <div class="card-header center card-formulir">
+              <h5>Catatan Tambahan</h5>
+            </div>
+            <div class="card-body card-body-formulir">
+              
+              <div class="row">
+                <div class="text-start mb-4 px-4">
+                  <h6>Catatan Tambahan*</h6>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control-Ta"></textarea>
+                  </div>
+                  <div class="form-check checkbox-sp">
+                    <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
         </section>
       </div>
+
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2023 <div class="bullet"></div> Design By Disdukcapil Kab. Bandung Developer
