@@ -130,17 +130,17 @@
         <aside id="sidebar-wrapper">
           <!--Brand Disdukcaoil-->
           <div class="sidebar-brand">
-            <a href="riwayatpermohonan-user.html">Disdukcapil Online</a>
+            <a href="dashboard-admin.html">Disdukcapil Online</a>
           </div>
           <!--Simbol Kalau sidebar di minimize-->
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="riwayatpermohonan-user.html">DO</a>
+            <a href="dashboard-admin.html">DO</a>
           </div>
           <!--List menu sidebar start-->
           <ul class="sidebar-menu">
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
-                <a href="operator-rekap.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
+                <a href="dashboard-admin.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
             </li>
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
@@ -213,7 +213,7 @@
                       <td>Administrator</td>
                       <td>
                             <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditPengguna"></span></a>
                             <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusPengguna"><span class="fa fa-trash"></span></span>
                       </td>
                     </tr>
@@ -226,7 +226,7 @@
                       <td>Operator</td>
                       <td>
                         <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditPengguna"></span></a>
                             <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusPengguna"><span class="fa fa-trash"></span></span>
                       </td>
                     </tr>
@@ -239,7 +239,7 @@
                       <td>User</td>
                       <td>
                         <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit"></span></a>
+                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditPengguna"></span></a>
                             <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusPengguna"><span class="fa fa-trash"></span></span>
                       </td>
                     </tr>
@@ -293,8 +293,61 @@
             <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
               <!--Kasih JS, ambil dari database-->
               <option selected></option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="admin">Administrator</option>
+              <option value="operator">Operator</option>
+              <option value="user">User</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Keterangan</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
+
+  <!--Modal Pop Up Edit Pengguna Start (Belum Ada JS)-->
+  <div class="modal fade" id="modalEditPengguna" tabindex="-1" role="dialog" aria-labelledby="modalEditPenggunaTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEditPenggunaTitle">Edit Pengguna</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-start px-4 mb-4">
+            <p>NIK</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>No HP</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Status Pengguna</p>
+            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="aktif">Aktif</option>
+              <option value="nonaktif">Non Aktif</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Level Pengguna</p>
+            <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="admin">Administrator</option>
+              <option value="operator">Operator</option>
+              <option value="user">User</option>
             </select>
           </div>
           <div class="text-start px-4 mb-4">

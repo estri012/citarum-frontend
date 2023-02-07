@@ -130,23 +130,23 @@
         <aside id="sidebar-wrapper">
           <!--Brand Disdukcaoil-->
           <div class="sidebar-brand">
-            <a href="riwayatpermohonan-user.html">Disdukcapil Online</a>
+            <a href="dashboard-admin.html">Disdukcapil Online</a>
           </div>
           <!--Simbol Kalau sidebar di minimize-->
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="riwayatpermohonan-user.html">DO</a>
+            <a href="dashboard-admin.html">DO</a>
           </div>
           <!--List menu sidebar start-->
           <ul class="sidebar-menu">
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
-                <a href="operator-rekap.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
+                <a href="dashboard-admin.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
             </li>
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
               <a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Riwayat Permohonan</span></a>
             </li>
-            <!--Sidebar Dokumen Selesai-->
+            <!--Sidebar Pengaturan-->
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-cog"></i> <span>Pengaturan</span></a>
               <ul class="dropdown-menu">
@@ -168,43 +168,185 @@
         <section class="section">
           <!--Judul Form-->
           <div class="section-header">
-            <h1>Akses Level - Ubah Akses</h1>
+            <h1>Tambah Hak Akses</h1>
           </div>
           <!--Judul Form end-->
         <div class="card">
           <div class="card-body">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="text-start px-4 mb-4">
-                        <h6>Nama Level</h6>
-                        <input value="Operator" type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                    </div>
-                    <div class="text-start px-4 mb-4">
-                        <h6>Keterangan</h6>
-                        <input value="Operator Kelompok Kerja 1" type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="text-start px-4 mb-4">
-                        <h6>Status</h6>
-                        <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
-                            <!--Kasih JS, ambil dari database-->
-                            <option selected></option>
-                            <option value="aktif">Aktif</option>
-                            <option value="nonaktif">Non Aktif</option>
-                        </select>
-                    </div>
-                    <div class="text-start px-4 mb-4">
-                        <h6>Kelompok Kerja</h6>
-                        <select name="kelkerja" id="kelkerja" class="form-control border-bottom shadow-none selectric" required>
-                            <!--Kasih JS, ambil dari database-->
-                            <option selected></option>
-                            <option value="hilang">Kelompok 1</option>
-                            <option value="rusak">Kelompok 2</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <form action="">
+              <div class="table-responsive">
+                <strong>
+                  <div class="text-center">
+                    <a href="" class="btn btn-warning" type="submit">CHECK ALL</a>
+                    <a href="" class="btn btn-info" type="submit">UNCHECK ALL</a>
+                    <button type="submit" id="aksesSimpan" class="btn btn-success">Simpan</button>
+                  </div>
+                  <table id="tableakses" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th data-field="no">No</th>
+                        <th data-field="group">Menu Group</th>
+                        <th data-field="sub">Sub Menu</th>
+                      </tr>
+                    </thead><hr>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Pengaturan&nbsp;
+                          <input type="checkbox" name="" value="">
+                        </td>
+                        <td>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">User Management</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Tambah Pengguna <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Lihat User<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Edit User<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Hapus User<br>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Menu Management</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Tambah Menu <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Lihat Menu <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Edit Menu <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Hapus Menu <br>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Access Level</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Tambah Level <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Lihat Level <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Edit Level <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Edit Hak Akses <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Hapus Level <br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Dashboard Non Warga&nbsp;
+                          <input type="checkbox" name="" value="">
+                        </td>
+                        <td>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Dashboard</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Riwayat Permohonan</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Verifikasi Pengajuan Operator<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Tolak Pengajuan Operator<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;CS Tolak Operator<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Hubungi Warga<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Perbaiki Ajuan<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Ajukan Permohonan<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Verifikasi Kasi<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Tolak Kasi<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Operator Unggah Dokumen<br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Dashboard Warga&nbsp;
+                          <input type="checkbox" name="" value="">
+                        </td>
+                        <td>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Pengajuan Permohonan</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Akta Kelahiran<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Akta Kematian<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Akta Perkawinan<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Akta Perceraian<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Kehilangan/Kerusakan Akta<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pengesahan/Pengakuan Anak<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pengabsahan Akta<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Cetak KTP-El<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Cetak KIA<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pengajuan Biodata<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Numpang KK<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Gabung KK karena perkawinan<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pecah KK<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pisah KK karena bercerai<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Cetak ulang KK<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Ubah alamat/Pindah antar kec, kel, RT<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Penduduk pendatang luar daerah<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Pindah luar daerah<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Bata pindah luar daerah<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;KK WNA tetap<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Surket tempat tinggal WNA<br>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Riwayat Permohonan</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Periksa Riwayat<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Hubungi<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Unduh Dokumen<br>
+                          <input type="checkbox" name="" value="">
+                          &nbsp;
+                          <font color="red">Dokumen Selesai</font>
+                          <br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Periksa Riwayat<br>
+                          <input type="checkbox" name="" value="">
+                          &emsp;&emsp;Unduh Dokumen<br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </strong>
+              </div>
+            </form>
           </div>
         </div>
 

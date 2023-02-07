@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Akses Level &mdash; Disdukcapil Kab.Bandung</title>
+  <title>Rekapitulasi Pelayanan &mdash; Disdukcapil Kab.Bandung</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -138,7 +138,7 @@
           </div>
           <!--List menu sidebar start-->
           <ul class="sidebar-menu">
-            <!--Sidebar Riwayat Pengajuan-->
+            <!--Sidebar Dashboard-->
             <li class="dropdown">
                 <a href="dashboard-admin.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
             </li>
@@ -146,7 +146,7 @@
             <li class="dropdown">
               <a href="#" class="nav-link"><i class="fas fa-file-alt"></i><span>Riwayat Permohonan</span></a>
             </li>
-            <!--Sidebar Dokumen Selesai-->
+            <!--Sidebar Pengaturan-->
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-cog"></i> <span>Pengaturan</span></a>
               <ul class="dropdown-menu">
@@ -168,100 +168,146 @@
         <section class="section">
           <!--Judul Form-->
           <div class="section-header">
-            <h1>Akses Level</h1>
+            <h1>Rekapitulasi Pelayanan Online</h1>
           </div>
           <!--Judul Form end-->
+
+        
         <div class="card">
-          <div class="card-body">
-            <div class="float-right">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTambahLevel">Tambah Level</button>
-            </div>
-            <!-- <div class="float-right">
-                <form action="" method="get">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="search" placeholder="Pencarian" value="">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+            <div class="card-body">
+                <h6>Rekapitulasi Pelayanan Online</h6><hr>
+                <!--Jumlah Permohonan Layanan-->
+                <div class="col-sm-12">
+                    <div class="card border rounded">
+                        <div class="card-header card-formulir"></div>
+                        <div class="card-body center">
+                            <h1>5400</h1>
+                            <h6>Jumlah Permohonan Layanan</h6>
                         </div>
                     </div>
-                </form>
-            </div> -->
+                    <div class="row">
 
-            <div class="clearfix mb-3"></div>
+                        <div class="col-sm-3">
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <a href="operator-dashboard2.html">
+                                  <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Belum Verifikasi Operator</h6>
+                                  </div>
+                                </a>
+                            </div>
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Permohonan Sesuai</h6>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-3">
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Verifikasi Operator</h6>
+                                </div>
+                            </div>
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Permohonan Tidak Sesuai</h6>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="table-responsive">
-                <table class="table">
-                    <tr class="heading-table">
-                        <th>ID</th>
-                        <th>Keterangan</th>
-                        <th>Status</th>
-                        <th>Level</th>
-                        <th>
-                            <a href="#" class="btn btn-sm"><span class="fa fa-edit"></span></a>
-                            <a href="#" class="btn btn-sm"><span class="fa fa-key"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-delete"><span class="fa fa-trash"></span></span>
-                        </th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Keterangan</td>
-                      <td>Aktif</td>
-                      <td>Administrator</td>
-                      <td>
-                          <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modalEditLevel"><span class="fa fa-edit"></span></a>
-                          <a href="ubahakseslevel.html" class="btn btn-sm btn-success"><span class="fa fa-key"></span></a>
-                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Keterangan</td>
-                        <td>Aktif</td>
-                        <td>Verifikator</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modalEditLevel"><span class="fa fa-edit"></span></a>
-                            <a href="ubahakseslevel.html" class="btn btn-sm btn-success"><span class="fa fa-key"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Keterangan</td>
-                        <td>Aktif</td>
-                        <td>Operator</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditLevel"></span></a>
-                            <a href="ubahakseslevel.html" class="btn btn-sm btn-success"><span class="fa fa-key"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Keterangan</td>
-                        <td>Aktif</td>
-                        <td>Customer Service</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditLevel"></span></a>
-                            <a href="ubahakseslevel.html" class="btn btn-sm btn-success"><span class="fa fa-key"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Keterangan</td>
-                        <td>Aktif</td>
-                        <td>User</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditLevel"></span></a>
-                            <a href="ubahakseslevel.html" class="btn btn-sm btn-success"><span class="fa fa-key"></span></a>
-                            <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusAkses"><span class="fa fa-trash"></span></span>
-                        </td>
-                    </tr>
-                </table>
+                        <div class="col-sm-3">
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Belum Verifikasi Kasi</h6>
+                                </div>
+                            </div>
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Dokumen Belum Upload</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Verifikasi Kasi</h6>
+                                </div>
+                            </div>
+                            <div class="card border rounded">
+                                <div class="card-header card-formulir"></div>
+                                <div class="card-body center">
+                                    <h1>5400</h1>
+                                    <h6>Dokumen Sudah Upload</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                </div>
+                
+                <h6>Statistik Kunjungan Layanan</h6><hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card border rounded">
+                            <div class="card-header card-formulir"></div>
+                            <div class="card-body center">
+                                <h1>5400</h1>
+                                <h6>Pengguna Aktif Saat ini</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border rounded">
+                            <div class="card-header card-formulir"></div>
+                            <div class="card-body center">
+                                <h1>5400</h1>
+                                <h6>Total Kunjungan Hari Ini</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border rounded">
+                            <div class="card-header card-formulir"></div>
+                            <div class="card-body center">
+                                <h1>5400</h1>
+                                <h6>Total Kunjungan Bulan Ini</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border rounded">
+                            <div class="card-header card-formulir"></div>
+                            <div class="card-body center">
+                                <h1>5400</h1>
+                                <h6>Total Kunjungan Tahun Ini</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+        
+
+
         </section>
+
+        
       </div>
       <footer class="main-footer">
         <div class="footer-left">
@@ -274,103 +320,6 @@
     </div>
   </div>
 
-  <!--Modal Pop Up Tambah Level Start (Belum Ada JS)-->
-  <div class="modal fade" id="modalTambahLevel" tabindex="-1" role="dialog" aria-labelledby="modalTambahLevelTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalTambahLevelTitle">Tambah Level</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="text-start px-4 mb-4">
-            <p>Nama Level</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Keterangan</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Status</p>
-            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
-              <!--Kasih JS, ambil dari database-->
-              <option selected></option>
-              <option value="aktif">Aktif</option>
-              <option value="nonaktif">Non Aktif</option>
-            </select>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Modal Pop Up end-->
-
-  <!--Modal Pop Up Edit Level Start (Belum Ada JS)-->
-  <div class="modal fade" id="modalEditLevel" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalEditLevelTitle">Edit Level</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="text-start px-4 mb-4">
-            <p>Nama Level</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Keterangan</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Status</p>
-            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
-              <!--Kasih JS, ambil dari database-->
-              <option selected></option>
-              <option value="aktif">Aktif</option>
-              <option value="nonaktif">Non Aktif</option>
-            </select>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary">Simpan</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Modal Pop Up end-->
-
-  <!--Modal Pop Up Hapus Pengguna (Belum Ada JS)-->
-  <div class="modal fade" id="modalHapusAkses" tabindex="-1" role="dialog" aria-labelledby="modalHapusAksesTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalHapusAksesTitle">Verifikasi Penghapusan</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">Apakah Anda ingin menghapus User Level terkait?
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-          <button type="button" class="btn btn-primary">Ya</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Modal Pop Up end-->
-
-  
 
 
   <!-- General JS Scripts -->

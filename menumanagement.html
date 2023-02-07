@@ -130,17 +130,17 @@
         <aside id="sidebar-wrapper">
           <!--Brand Disdukcaoil-->
           <div class="sidebar-brand">
-            <a href="riwayatpermohonan-user.html">Disdukcapil Online</a>
+            <a href="dashboard-admin.html">Disdukcapil Online</a>
           </div>
           <!--Simbol Kalau sidebar di minimize-->
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="riwayatpermohonan-user.html">DO</a>
+            <a href="dashboard-admin.html">DO</a>
           </div>
           <!--List menu sidebar start-->
           <ul class="sidebar-menu">
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
-                <a href="operator-rekap.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
+                <a href="dashboard-admin.html" class="nav-link"><i class="fas fa-file-alt"></i><span>Dashboard</span></a>
             </li>
             <!--Sidebar Riwayat Pengajuan-->
             <li class="dropdown">
@@ -174,17 +174,376 @@
         <div class="card">
           <div class="card-body">
             <div class="float-right">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTambahPengguna">Tambah Pengguna</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTambahMenu">Tambah Menu</button>
             </div>
 
 
             <div class="clearfix mb-3"></div>
 
             <div class="table-responsive">
-                <table class="table">
-                    
-                </table>
-            </div>
+              <table class="table">
+                  <tr class="heading-table">
+                      <th>ID</th>
+                      <th>Nama Menu</th>
+                      <th>Status</th>
+                      <th>Menu Level</th>
+                      <th>Parent Menu</th>
+                      <th>
+                          <a href="#" class="btn btn-sm"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm"><span class="fa fa-edit"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-delete"><span class="fa fa-trash"></span></span>
+                      </th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>Aktif</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Akta Kelahiran</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Akta Kematian</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Akta Perkawinan</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Akta Perceraian</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Kehilangan/Kerusakan Akta</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Pengesahan Anak atau Pengakuan Anak</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Cetak KTP-El</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Cetak KIA</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Pengajuan Biodata</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Perubahan Biodata</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Numpang Kartu Keluarga</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Gabung Kartu Keluarga Karena Perkawinan</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Pecah Kartu Keluarga</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Pisah Kartu Keluarga</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>Cetak Ulang Kartu Keluarga</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>Perubahan Alamat/Pinda Antar Kecamatan, Kelurahan atau RT</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>Penduduk Pendatang Luar Daerah</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>Pindah Luar Daerah</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>Batal Pindah Luar Daerah</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>Kartu Keluarga WNA Tetap</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Surat Keternagan Tempat Tinggal WNA</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengajuan Permohonan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>Riwayat Permohonan</td>
+                    <td>Aktif</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>Dokumen Selesai</td>
+                    <td>Aktif</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>Dashboard</td>
+                    <td>Aktif</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>Pengaturan</td>
+                    <td>Aktif</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>User Management</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengaturan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>Menu Management</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengaturan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>Access Level</td>
+                    <td>Aktif</td>
+                    <td>2</td>
+                    <td>Pengaturan</td>
+                    <td>
+                          <a href="#" class="btn btn-sm btn-info"><span class="fa fa-eye"></span></a>
+                          <a href="#" class="btn btn-sm btn-warning"><span class="fa fa-edit" data-toggle="modal" data-target="#modalEditMenu"></span></a>
+                          <span data-title="administrator" href="#" class="btn btn-sm btn-danger btn-delete" data-toggle="modal" data-target="#modalHapusMenu"><span class="fa fa-trash"></span></span>
+                    </td>
+                  </tr>
+              </table>
+          </div>
           </div>
         </div>
         </section>      
@@ -200,17 +559,121 @@
     </div>
   </div>
 
-  <!--Modal Pop Up Hapus Pengguna (Belum Ada JS)-->
-  <div class="modal fade" id="modalHapusPengguna" tabindex="-1" role="dialog" aria-labelledby="modalHapusPenggunaTitle" aria-hidden="true">
+  <!--Modal Pop Up Tambah Menu Start (Belum Ada JS)-->
+  <div class="modal fade" id="modalTambahMenu" tabindex="-1" role="dialog" aria-labelledby="modalTambahMenuTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalHapusPenggunaTitle">Verifikasi Penghapusan</h5>
+          <h5 class="modal-title" id="modalTambahMenuTitle">Tambah Menu</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">Apakah Anda ingin menghapus User terkait?
+        <div class="modal-body">
+          <div class="text-start px-4 mb-4">
+            <p>Nama Menu</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Status</p>
+            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="aktif">Aktif</option>
+              <option value="nonaktif">Non Aktif</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Menu Level</p>
+            <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Parent Menu</p>
+            <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="">Pengajuan Permohonan</option>
+              <option value="">Pengaturan</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
+
+  <!--Modal Pop Up Edit Menu Start (Belum Ada JS)-->
+  <div class="modal fade" id="modalEditMenu" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEditMenuTitle">Edit Menu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-start px-4 mb-4">
+            <p>Nama Menu</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Status</p>
+            <select name="statuspengguna" id="statuspengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="aktif">Aktif</option>
+              <option value="nonaktif">Non Aktif</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Menu Level</p>
+            <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Parent Menu</p>
+            <select name="levelpengguna" id="levelpengguna" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value="">Pengajuan Permohonan</option>
+              <option value="">Pengaturan</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
+
+  <!--Modal Pop Up Hapus Menu (Belum Ada JS)-->
+  <div class="modal fade" id="modalHapusMenu" tabindex="-1" role="dialog" aria-labelledby="modalHapusMenuTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHapusMenuTitle">Verifikasi Penghapusan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">Apakah Anda ingin menghapus Menu terkait?
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
           <button type="button" class="btn btn-primary">Ya</button>
