@@ -37,7 +37,7 @@
                   <!--Div no hp-->
                   <div class="form-group">
                     <label for="nomorhp">Nomor HP</label>
-                    <input id="nomorhp" type="nomorhp" class="form-control" name="nomorhp" tabindex="1" required autofocus>
+                    <input id="nomorhp" type="nomorhp" class="form-control border-bottom" name="nomorhp" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
                       Tolong isi nomor HP anda!
                     </div>
@@ -52,7 +52,7 @@
                         </a>
                       </div>
                     </div>
-                    <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
+                    <input id="password" type="password" class="form-control border-bottom" name="password" tabindex="2" required>
                     <div class="invalid-feedback">
                       Tolong isi kata sandi anda!
                     </div>
@@ -96,7 +96,7 @@
             </div>
             <!--Hyperlink buat akun-->
             <div class="mt-5 text-muted text-center">
-              Belum punya akun? <a href="auth-register.html">Buat Akun</a>
+              Belum punya akun? <a href="register.php">Buat Akun</a>
             </div>
             <div class="simple-footer">
               Copyright &copy; Disdukcapil Kab. Bandung 2023

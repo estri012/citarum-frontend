@@ -38,13 +38,13 @@
                     <!--Nomor HP-->
                     <div class="form-group col-6">
                       <label for="nomorhp">Nomor Hp</label>
-                      <input id="nomorhp" type="text" class="form-control" name="nomorhp" autofocus>
+                      <input id="nomorhp" type="text" class="form-control border-bottom" name="nomorhp" autofocus>
                     </div>
                   </div>
                   <!--Email-->
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email">
+                    <input id="email" type="email" class="form-control border-bottom" name="email">
                     <div class="invalid-feedback">
                     </div>
                   </div>
@@ -52,7 +52,7 @@
                   <div class="row">
                     <div class="form-group col-6">
                       <label for="password" class="d-block">Kata Sandi</label>
-                      <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password">
+                      <input id="password" type="password" class="form-control pwstrength border-bottom" data-indicator="pwindicator" name="password">
                       <div id="pwindicator" class="pwindicator">
                         <div class="bar"></div>
                         <div class="label"></div>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="form-group col-6">
                       <label for="password2" class="d-block">Ulangi Kata Sandi</label>
-                      <input id="password2" type="password" class="form-control" name="password-confirm">
+                      <input id="password2" type="password" class="form-control border-bottom" name="password-confirm">
                     </div>
                   </div>
 
