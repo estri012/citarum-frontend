@@ -190,6 +190,449 @@
             <h1>Gabung Kartu Keluarga Karena Perkawinan</h1>
           </div>
           <!--Judul Form end-->
+
+          <!--Section Form start-->
+          <div class="section-body">
+
+            <!--Card Formulir Gabung Kartu Keluarga-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Formulir Pendaftaran Gabung Kartu Keluarga</h5>
+              </div>  
+              <div class="card-body">
+                <h6 class="text-merah">Catatan :</h6>
+                <ul>
+                  <li>Tanda (*) Dokumen wajib dilampirkan.</li>
+                  <li>Tanda (**) Menyesuaikan dengan kebutuhan.</li>
+                  <li>Dokumen tambahan yang tidak diperlukan, boleh dikosongkan.</li>
+                  <li>Semua file berbentuk foto atau gambar yang berwarna/asli (bukan hasil fotokopi) dengan ukaran file tidak lebih dari 1MB.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--Form start-->
+            <form action="">
+            <!--Card Data Pemohon-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Pemohon</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>No Telepon*</h6>
+                      <input type="tel" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Pemohon*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Email*</h6>
+                      <input type="email" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Pemohon*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Suami-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Suami</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Suami*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Suami*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kabupaten/Kota Saat Ini*</h6>
+                      <input class="form-control" type="text" value="Kabupaten Bandung" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kelurahan/Desa Saat Ini*</h6>
+                      <select name="desa" id="desa" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RT Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rt" id="rt" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>No KK Suami*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Provinsi Saat Ini*</h6>
+                      <input class="form-control" type="text" value="Jawa Barat" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kecamatan Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RW Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rw" id="rw" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Alamat Saat Ini*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Istri-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Istri</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Istri*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Istri*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kabupaten/Kota Saat Ini*</h6>
+                      <input class="form-control" type="text" value="Kabupaten Bandung" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kelurahan/Desa Saat Ini*</h6>
+                      <select name="desa" id="desa" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RT Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rt" id="rt" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>No KK Istri*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Provinsi Saat Ini*</h6>
+                      <input class="form-control" type="text" value="Jawa Barat" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kecamatan Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RW Saat Ini*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rw" id="rw" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Alamat Saat Ini*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data Perkawinan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Perkawinan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nomor Buku Nikah atau Akta Perkawinan*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Tanggal Kawin*</h6>
+                      <div class="input-group">
+                        <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Data KK Tujuan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Alamat Gabung Kartu Keluarga</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Provinsi Tujuan*</h6>
+                      <input class="form-control" type="text" value="Jawa Barat" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kecamatan Tujuan*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="kecamatan" id="kecamatan" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RW Tujuan*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rw" id="rw" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Alamat Tujuan*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kabupaten/Kota Tujuan*</h6>
+                      <input class="form-control" type="text" value="Kabupaten Bandung" disabled>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Kelurahan/Desa Tujuan*</h6>
+                      <select name="desa" id="desa" class="form-control border-bottom shadow-none selectric" required>
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>No RT Tujuan*</h6>
+                      <!-- <input value class="form-control card-body-formulir border-bottom shadow-none" type="text"> -->
+                      <select name="rt" id="rt" class="form-control border-bottom shadow-none selectric">
+                        <!--Kasih JS, ambil dari database-->
+                        <option selected></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Jumlah Penduduk Pengikut*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <!--Card Upload Dokumen-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Berkas Persyaratan</h5>
+                <h6>*Unggah foto/scan Dokumen Asli, bukan fotocopy</h6>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="bukunikah-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="bukunikah"
+                          onchange="document.getElementById('bukunikah-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Buku Nikah atau Akta Perkawinan*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpsuami-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpsuami"
+                          onchange="document.getElementById('ktpsuami-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Foto KTP Suami (Untuk Pengajuan Pencetakan KTP)*</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="kksuami-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="kksuami"
+                          onchange="document.getElementById('kksuami-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Kartu Keluarga Suami*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="ktpistri-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="ktpistri"
+                          onchange="document.getElementById('ktpistri-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Foto KTP Istri (Untuk Pengajuan Pencetakan KTP)*</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="kkistri-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="kkistri"
+                          onchange="document.getElementById('kkistri-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Kartu Keluarga Istri*</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="lain-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="lain"
+                          onchange="document.getElementById('lain-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Data Berkas Pendukung</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="lain1-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="lain1"
+                          onchange="document.getElementById('lain1-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Data Berkas Pendukung</h6></div>
+                    </div>
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="lain2-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="lain2"
+                          onchange="document.getElementById('lain2-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Data Berkas Pendukung</h6></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!--Card Catatan Tambahan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Catatan Tambahan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="form-group">
+                  <label for="catatanText">Catatan Tambahan</label>
+                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
+                </div>
+                <div class="form-check checkbox-sp">
+                  <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
+                </div><br>
+                <div class="button-center">
+                  <button class="btn btn-primary" type="submit" style="font-size: large;">Ajukan Permohonan</button>
+                </div>
+              </div>
+            </div>
+            
+            <!--End Form-->
+            </form>
+            <!--Section Form end-->
+            </div>
+
+
+
         </section>
       </div>
       <footer class="main-footer">
