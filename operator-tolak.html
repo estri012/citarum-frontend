@@ -293,7 +293,7 @@
                         <button class="btn btn-primary float-right" id="btnVerif5" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Permohonan</button>
                       </dd>
                       <dt class="col-sm-6">
-                        <button class="btn btn-danger" id="btnVerif6" onclick="BukaModalVerif()" style="font-size: large;" >Ajukan Pengaduan</button>
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#bookingPengaduan" style="font-size: large;" >Ajukan Pengaduan</button>
                       </dt>
                     </dl>
                     <!-- Tombol verifikasi/tolak end -->
@@ -477,6 +477,59 @@
         </div>
       </div>
       <!-- Modal PopUp Verifikasi end-->
+
+      <!--Modal Pop Up Booking Pengaduan (Belum Ada JS)-->
+  <div class="modal fade" id="bookingPengaduan" tabindex="-1" role="dialog" aria-labelledby="bookingPengaduanTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingPengaduanTitle">Booking Pengaduan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="">
+          <div class="modal-body">
+            <div class="text-start px-4 mb-4">
+              <p>No Dokumen</p>
+              <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+            </div>
+            <div class="text-start px-4 mb-4">
+              <p>No Antrian</p>
+              <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+            </div>
+            <div class="text-start px-4 mb-4">
+              <p>Tanggal Kunjungan</p>
+              <div class="input-group">
+                <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+              </div>
+            </div>
+            <div class="text-start px-4 mb-4">
+              <p>Waktu Kunjungan</p>
+              <select name="wktkunjung" id="wktkunjung" class="form-control border-bottom shadow-none selectric" required>
+                <!--Kasih JS, ambil dari database-->
+                <option selected></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="text-start px-4 mb-4">
+              <p>Lokasi</p>
+              <select name="lokasi" id="lokasi" class="form-control border-bottom shadow-none selectric" required>
+                <!--Kasih JS, ambil dari database-->
+                <option selected></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Modal Pop Up end-->
 
       </footer>
     </div>
