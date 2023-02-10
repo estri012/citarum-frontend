@@ -190,6 +190,152 @@
             <h1>Kartu Identitas Anak</h1>
           </div>
           <!--Judul Form end-->
+
+          <!--Section Form start-->
+          <div class="section-body">
+
+            <!--Card Formulir Pecah Kartu Keluarga-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Formulir Pendaftaran Cetak Kartu Identitas Anak</h5>
+              </div>  
+              <div class="card-body">
+                <h6 class="text-merah">Catatan :</h6>
+                <ul>
+                  <li>Tanda (*) Dokumen wajib dilampirkan.</li>
+                  <li>Tanda (**) Menyesuaikan dengan kebutuhan.</li>
+                  <li>Dokumen tambahan yang tidak diperlukan, boleh dikosongkan.</li>
+                  <li>Semua file berbentuk foto atau gambar yang berwarna/asli (bukan hasil fotokopi) dengan ukaran file tidak lebih dari 1MB.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--Form start-->
+            <form action="">
+            <!--Card Data Pemohon-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Data Pemohon</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>No Telepon*</h6>
+                      <input type="tel" class="form-control card-body-formulir border-bottom shadow-none" maxlength="14" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Email*</h6>
+                      <input type="email" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>NIK Anak*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nomor KK*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" maxlength="16" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nama Lengkap Pemohon*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                    <div class="text-start px-4 mb-4">
+                      <h6>Nomor Akta Kelahiran*</h6>
+                      <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Card Upload Dokumen-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Berkas Persyaratan</h5>
+                <h6>*Unggah foto/scan Dokumen Asli, bukan fotocopy</h6>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="aktalahir-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="aktalahir"
+                          onchange="document.getElementById('aktalahir-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Akta Kelahiran*</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="fotoanak-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="fotoanak"
+                          onchange="document.getElementById('fotoanak-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Foto Anak (untuk usia di atas 5 tahun)</h6></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card border rounded">
+                      <div class="card-header">
+                        <!--Masukin JS biar cuma bisa upload jpg png pdf sama maksimal ukuran file-->
+                        <div class="center">
+                          <img id="kk-img" alt="Unggah Berkas Pendukung Anda!" width="100" height="100">
+                        </div>
+                        <div class="form-group center">
+                          <input type="file" id="kk"
+                          onchange="document.getElementById('kk-img').src=window.URL.createObjectURL(this.files[0])">
+                        </div>
+                      </div>
+                      <div class="card-body center"><h6>Kartu Keluarga*</h6></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!--Card Catatan Tambahan-->
+            <div class="card border rounded">
+              <div class="card-header center card-formulir">
+                <h5>Catatan Tambahan</h5>
+              </div>
+              <div class="card-body card-body-formulir">
+                <div class="form-group">
+                  <label for="catatanText">Catatan Tambahan</label>
+                  <textarea class="form-control border" id="catatanText" rows="3"></textarea>
+                </div>
+                <div class="form-check checkbox-sp">
+                  <input class="form-check-input" type="checkbox" value="" id="spKebijakan">Saya menerima segala isi Syarat Penggunaan Kebijakan Privasi
+                </div><br>
+                <div class="button-center">
+                  <button class="btn btn-primary" type="submit" style="font-size: large;">Ajukan Permohonan</button>
+                </div>
+              </div>
+            </div>
+            
+            <!--End Form-->
+            </form>
+            <!--Section Form end-->
+            </div>
+
+
+
+
+
         </section>
       </div>
       <footer class="main-footer">
