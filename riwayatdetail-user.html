@@ -198,177 +198,225 @@
               </select>
             </div>
           </div>
-          <div class="card border rounded">
-            <div class="card-body">
-                <span style='font-size:30px; font-weight: bolder;'><a href="riwayatpermohonan-user.html">&#8592;</a>
-                Riwayat Dokumen 3204500000000000
-                </span>
-            </div>
-          </div>
-          <!--Row buat cards-->
-          <div class="row">
-            <!--KASIH JAVASCRIPT Kalau GA ADA PENGAJUAN-->
-
-            <!--Card start-->
-            <div class="col-sm-6">
-                <!--Card Riwayat Permohonan-->
-                <div class="col-sm-12">
-                    <div class="card border rounded">
-                        <div class="card-header center card-formulir">
-                          <h5>Riwayat Permohonan</h5>
-                        </div>
-                        <div class="card-body">
-                          <!--Javascript disini ambil jenis dokumen-->   
-                          <dl class="row">
-                            <!--Tanggal sama waktu pengajuan-->
-                            <dt class="col-sm-7">
-                              <i class="fas fa-calendar"></i>
-                              <!--Javascript ambil tanggal-->
-                              27 Januari 2023
-                            </dt>
-                            <dt class="col-sm-5">
-                              <i class="fas fa-clock"></i>
-                              <!--Javascript ambil waktu-->
-                              08:00 WIB
-                            </dt>
-                          </dl><hr>
-                          <!--Ringkasan pengajuan-->
-                          <dl class="row">
-                            <dd class="col-sm-7">NIK Pemohon</dd>
-                            <!--Javascript ambil NIK pemohon-->
-                            <dt class="col-sm-5">3204000000000000</dt>
-                            <dd class="col-sm-7">Nama Pemohon</dd>
-                            <!--Javascript ambil Nama pemohon-->
-                            <dt class="col-sm-5">Ujang Saepulloh</dt>
-                            <dd class="col-sm-7">No Dokumen</dd>
-                            <!--Javascript ambil Nama pemohon-->
-                            <dt class="col-sm-5">3204111111111111</dt>
-                            <dt class="col-sm-7">Catatan</dt>
-                          </dl>
-                          <!--Catatan Diajukan (dinamis), JavaScript ambil data dari DB-->
-                          <p>-</p>
-                          <!--button unduh file, riwayat, hubungi-->
-                          <!-- <dl class="row">
-                            <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
-                            <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
-                          </dl> -->
-                          <hr>
-                          <dl class="row">
-                            <p class="col-sm-7">27 Januari 2023</p>
-                            <p class="col-sm-5">08:05:30</p>
-                            <p class="col-sm-7" style="font-weight: bold;">Pengajuan Permohonan</p>
-                            <p class="col-sm-7">27 Januari 2023</p>
-                            <p class="col-sm-5">10:00:30</p>
-                            <p class="col-sm-7" style="font-weight: bold;">Permohonan diverifikasi oleh operator</p>
-                            <p class="col-sm-7" >Bagus</p>
-                          </dl>
-                        </div>
-                    </div>
-                </div>
-                <!--Card Riwayat Berkas-->
-                <div class="col-sm-12">
-                    <div class="card border rounded">
-                        <div class="card-header center card-formulir">
-                          <h5>Riwayat Berkas</h5>
-                        </div>
-                        <div class="card-body">
-                          <!--Javascript disini ambil jenis dokumen-->
-                          <h5 class="card-title">Perubahan Biodata</h5>     
-                          <dl class="row">
-                            <!--Tanggal sama waktu pengajuan-->
-                            <dt class="col-sm-7">
-                              <i class="fas fa-calendar"></i>
-                              <!--Javascript ambil tanggal-->
-                              27 Januari 2023
-                            </dt>
-                            <dt class="col-sm-5">
-                              <i class="fas fa-clock"></i>
-                              <!--Javascript ambil waktu-->
-                              08:00 WIB
-                            </dt>
-                          </dl><hr>
-                          <!--Ringkasan pengajuan-->
-                          <dl class="row">
-                            <dd class="col-sm-7">NIK Pemohon</dd>
-                            <!--Javascript ambil NIK pemohon-->
-                            <dt class="col-sm-5">3204000000000000</dt>
-                            <dd class="col-sm-7">Nama Pemohon</dd>
-                            <!--Javascript ambil Nama pemohon-->
-                            <dt class="col-sm-5">Ujang Saepulloh</dt>
-                            <dd class="col-sm-7">No Dokumen</dd>
-                            <!--Javascript ambil Nama pemohon-->
-                            <dt class="col-sm-5">3204111111111111</dt>
-                            <dt class="col-sm-7">Catatan</dt>
-                          </dl>
-                          <!--Catatan Diajukan (dinamis), JavaScript ambil data dari DB-->
-                          <p>-</p>
-                          <!--button unduh file, riwayat, hubungi-->
-                          <!-- <dl class="row">
-                            <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
-                            <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
-                          </dl> -->
-                          <a class="btn btn-riwayat-diajukan" href="#" role="button">Periksa Riwayat</a>
-                          <a class="btn btn-hubungi-diajukan" href="#" role="button">Hubungi</a>
-                        </div>
-                    </div>
-                </div>
-              
-            </div>
-            <!--Card end-->
-
-            <!--Card start-->
-            <div class="col-sm-6">
-              <div class="card border rounded">
-                <div class="card-header center card-formulir">
-                  <h5>Detail Permohonan</h5>
-                </div>
+          
+          <div class="section-body">
+            <!--Navigasi Header-->
+            <div class="card border rounded">
                 <div class="card-body">
-                  <!--Javascript disini ambil jenis dokumen-->
-                  <h5 class="card-title">Perubahan Biodata</h5>     
-                  <dl class="row">
-                    <!--Tanggal sama waktu pengajuan-->
-                    <dt class="col-sm-7">
-                      <i class="fas fa-calendar"></i>
-                      <!--Javascript ambil tanggal-->
-                      27 Januari 2023
-                    </dt>
-                    <dt class="col-sm-5">
-                      <i class="fas fa-clock"></i>
-                      <!--Javascript ambil waktu-->
-                      08:00 WIB
-                    </dt>
-                  </dl><hr>
-                  <!--Ringkasan pengajuan-->
-                  <dl class="row">
-                    <dd class="col-sm-7">NIK Pemohon</dd>
-                    <!--Javascript ambil NIK pemohon-->
-                    <dt class="col-sm-5">3204000000000000</dt>
-                    <dd class="col-sm-7">Nama Pemohon</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">Agi Ayubi</dt>
-                    <dd class="col-sm-7">No Dokumen</dd>
-                    <!--Javascript ambil Nama pemohon-->
-                    <dt class="col-sm-5">3204111111111111</dt>
-                    <dt class="col-sm-7">Catatan</dt>
-                  </dl>
-                  <!--Catatan Proses (dinamis), JavaScript ambil data dari DB-->
-                  <p>-</p>
-                  <!--button unduh file, riwayat, hubungi-->
-                  <!-- <dl class="row">
-                    <dd class="col-sm-7"><a href="#" class="btn btn-riwayat-selesai">Periksa Riwayat</a></dd>
-                    <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
-                  </dl> -->
-                  <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-proses" href="#" role="button">Hubungi</a>
+                <div class="row">
+                    <a href="#" onclick="history.back()" class="btn btn-icon ml-3 mt-1"><i class="fas fa-arrow-left fa-lg"></i></a>
+                    <i class="fas fa-file-alt fa-2x ml-2 mt-1"></i>
+                    <div class="card-text text-riwayat ml-4" id="textJudulHalaman">
+                        Unggah Dokumen - Dokumen {}
+                    </div>
                 </div>
-              </div>
+                </div>
             </div>
-            <!--Card end-->
+            <!--Navigasi Header end-->
 
+            <!-- Main Content -->
+            <div class="row">
+                <!-- Kolom Kiri -->
+                <div class="col-sm-6">
+                    <!-- Riwayat permohonan -->
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                            <h5>Riwayat Permohonan</h5>
+                        </div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <!--Tanggal sama waktu pengajuan-->
+                                <dt class="col-sm-7">
+                                  <i class="fas fa-calendar"></i>
+                                  <!--Javascript ambil tanggal-->
+                                  27 Januari 2023
+                                </dt>
+                                <dt class="col-sm-5">
+                                  <i class="fas fa-clock"></i>
+                                  <!--Javascript ambil waktu-->
+                                  08:00 WIB
+                                </dt>
+                            </dl>
+                            <hr>
+                            <dl class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                <!--Javascript ambil NIK pemohon-->
+                                <dt class="col-sm-5">3204000000000000</dt>
+                                <dd class="col-sm-7">Nama Pemohon</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5">3204111111111111</dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5">3204111111111111</dt>
+                            </dl>
+                            <hr>
+                            <dl class="row">
+                                <!--Tanggal sama waktu pengajuan-->
+                                <dt class="col-sm-7">
+                                  <i class="fas fa-calendar"></i>
+                                  <!--Javascript ambil tanggal-->
+                                  27 Januari 2023
+                                </dt>
+                                <dt class="col-sm-5">
+                                  <i class="fas fa-clock"></i>
+                                  <!--Javascript ambil waktu-->
+                                  08:00 WIB
+                                </dt>
+                            </dl>
+                            <dl class="row">
+                                <dd class="col-sm-7">Pengajuan Permohonan</dd>
+                            </dl>
+                            
+                        </div>
+                    </div>
+                    <!-- Riwayat permohonan end -->
 
+                    <!-- Riwayat Berkas -->
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                            <h5>Riwayat Berkas</h5>
+                        </div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                <!--Javascript ambil NIK pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">Nama Pemohon</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                <!--Javascript ambil NIK pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">Nama Pemohon</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
+                                <dd class="col-sm-7">No Dokumen</dd>
+                                <!--Javascript ambil Nama pemohon-->
+                                <dt class="col-sm-5"><a href="#" class="form-control-op input-riwayat">Lihat</a></dt>
 
-          </div>
-          <!--Row card selesai-->
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- Riwayat Berkas end-->
+                </div>
+                <!-- Kolom Kiri end-->
+
+                <!-- Kolom Kanan -->
+                <div class="col-sm-6">
+                    <!-- Detail Permohonan -->
+                    <div class="card border rounded">
+                        <div class="card-header center card-formulir">
+                            <h5>Detail Permohonan</h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Data Wilayah</h5>
+                            <hr>
+                            <div class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                    <!--Javascript ambil NIK pemohon-->
+                                    <dt class="col-sm-5">3204000000000000</dt>
+                                    <dd class="col-sm-7">Nama Pemohon</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                </dl>
+                            </div>
+                            <h5 class="card-title">Data Pemohon</h5>
+                            <hr>
+                            <div class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                    <!--Javascript ambil NIK pemohon-->
+                                    <dt class="col-sm-5">3204000000000000</dt>
+                                    <dd class="col-sm-7">Nama Pemohon</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                </dl>
+                            </div>
+                            <h5 class="card-title">Data Pelapor</h5>
+                            <hr>
+                            <div class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                    <!--Javascript ambil NIK pemohon-->
+                                    <dt class="col-sm-5">3204000000000000</dt>
+                                    <dd class="col-sm-7">Nama Pemohon</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                </dl>
+                            </div>
+                            <h5 class="card-title">Data Saksi 1</h5>
+                            <hr>
+                            <div class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                    <!--Javascript ambil NIK pemohon-->
+                                    <dt class="col-sm-5">3204000000000000</dt>
+                                    <dd class="col-sm-7">Nama Pemohon</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                </dl>
+                            </div>
+                            <h5 class="card-title">Data Data Saksi 2</h5>
+                            <hr>
+                            <div class="row">
+                                <dd class="col-sm-7">NIK Pemohon</dd>
+                                    <!--Javascript ambil NIK pemohon-->
+                                    <dt class="col-sm-5">3204000000000000</dt>
+                                    <dd class="col-sm-7">Nama Pemohon</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">Ujang Saepulloh</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                    <dd class="col-sm-7">No Dokumen</dd>
+                                    <!--Javascript ambil Nama pemohon-->
+                                    <dt class="col-sm-5">3204111111111111</dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            Card footer
+                        </div>
+                    </div>
+                    <!-- Detail Permohonan end -->
+                </div>
+                <!-- Kolom Kanan end -->
+            </div>
+            <!-- Main Content end-->
+            
+        </div>
+          
+          
         </section>
       </div>
       <footer class="main-footer">
