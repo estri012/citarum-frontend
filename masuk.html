@@ -16,20 +16,43 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/background.css">
 </head>
 
-<body style="background-image: url('assets/img/background_1.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-  <div id="app">
+
+
+<body class="background-animasi">
+  <div class="utama" style="position: absolute;">
     <section class="section">
-      <div class="container mt-5">
+      
         <div class="row">
-          <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                
+                
+              </div>
+              <div class="col-sm-3"></div>
+            </div>
+            
+          </div>
+          <div class="col-sm-3">
+            <div class="card card-batas">
+              <div class="col-lg-1"></div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                
+
+
+
             <div class="login-brand">
-              <img src="assets/img/logokab.png" alt="logo" width="100" class="shadow-light">
+              <img src="assets/img/logokab.png" alt="logo" width="100">
             </div>
             <!--Judul form-->
-            <div class="card card-primary">
-              <div class="card-header"><h2 style="padding-left: 14%; color: #3D6C53;">Dukcapil Online</h2></div>
+            <div class="card">
+              <div class="card-body"><h2 class="text-center" style="color: #3D6C53;">Dukcapil Online</h2></div>
               <!--Form body card-->
               <div class="card-body">
                 <!--Form login start-->
@@ -57,33 +80,8 @@
                       Tolong isi kata sandi anda!
                     </div>
                   </div>
-                  <!--Captcha PHP -->
-                  <?php 
-                  if (isset($_POST['login'])) {
-                    session_start();
-                    if($_SESSION['captcha'] == $_POST['kode']){
-                      //isi dengan kode pendaftaran ke database mysql teman-teman
-                      echo "Berhasil";
-                    }else{
-                      echo "Kode captcha salah!";
-                    }
-                  }
-                  ?>
 
-                  <!--Bagian captcha-->
-                  <div class="form-group">
-                    <img src="captcha.php?date=<?php echo date('YmdHis');?>" alt="">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" name="kode" placeholder="kode captcha" required>
-                  </div>
-                  <!--Checkbox ingat saya-->
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                      <label class="custom-control-label" for="remember-me">Ingat Saya</label>
-                    </div>
-                  </div>
+
                   <!--Tombol masuk-->
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" name="login" tabindex="4">
@@ -96,15 +94,31 @@
             </div>
             <!--Hyperlink buat akun-->
             <div class="mt-5 text-muted text-center">
-              Belum punya akun? <a href="register.php">Buat Akun</a>
+              Belum punya akun? <a style="color: white;" href="register.php">Buat Akun</a>
             </div>
-            <div class="simple-footer">
-              Copyright &copy; Disdukcapil Kab. Bandung 2023
-            </div>
+            
+          
+
+          </div>
+
+
+
+          </div> <!--row-->
+
+        </div>
+
+
+
           </div>
         </div>
-      </div>
+        
     </section>
+    <footer>
+      <div class="simple-footer">
+        Copyright &copy; Disdukcapil Kab. Bandung 2023
+      </div>
+    </footer>
+    
   </div>
 
   <!-- General JS Scripts -->
@@ -123,5 +137,6 @@
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/animasi-background.js"></script>
 </body>
 </html>

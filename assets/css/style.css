@@ -681,6 +681,14 @@ select.form-control:not([size]):not([multiple]) {
   .card-body-formulir {
     background-color: white;
   }
+  .card-batas {
+    border-radius: 0px;
+    border: none;
+    background-color: #3D6C53; 
+    width: 100%; 
+    margin-top: 25%; 
+    padding-bottom: 15%;
+  }
 
   .card .card-header, .card .card-body, .card .card-footer {
     /*background-color: transparent;*/

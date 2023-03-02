@@ -59,4 +59,11 @@ function tutupmodal() {
     $('#modalCenter').modal('hide')
 };
 
+function SimpanBooking() {
+    $('#bookingPengaduan').modal('hide');
+    change_button();
+}
 
+function change_button(){
+    document.getElementById("btnBooking").innerHTML = "Lihat Tiket";
+}

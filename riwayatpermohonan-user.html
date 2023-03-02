@@ -133,7 +133,7 @@
           </div>
           <!--Simbol Kalau sidebar di minimize-->
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="riwayatpermohonan-user.html">DO</a>
+            <a href="riwayatpermohonan-user.html"><img src="assets/img/backdrop.png" width="50"></a>
           </div>
           <!--List menu sidebar start-->
           <ul class="sidebar-menu">
@@ -245,7 +245,7 @@
                     <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
                   </dl> -->
                   <a class="btn btn-riwayat-diajukan" href="riwayatdetail-user.html" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-diajukan" href="#" role="button">Hubungi</a>
+                  <a class="btn btn-hubungi-diajukan" href="https://api.whatsapp.com/send?phone=6285722363280" target="_blank" role="button">Hubungi</a>
                 </div>
               </div>
             </div>
@@ -294,7 +294,7 @@
                     <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
                   </dl> -->
                   <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-proses" href="#" role="button">Hubungi</a>
+                  <a class="btn btn-hubungi-proses" role="button" id="btnBooking" data-toggle="modal" data-target="#bookingPengaduan">Booking Kunjungan</a>
                 </div>
               </div>
             </div>
@@ -510,6 +510,57 @@
       </footer>
     </div>
   </div>
+
+<!--Modal Pop Up Booking Pengaduan (Belum Ada JS)-->
+<div class="modal fade" id="bookingPengaduan" tabindex="-1" role="dialog" aria-labelledby="bookingPengaduanTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingPengaduanTitle">Booking Pengaduan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="">
+        <div class="modal-body">
+          <div class="text-start px-4 mb-4">
+            <p>No Dokumen</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>No Antrian</p>
+            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Tanggal Kunjungan</p>
+            <div class="input-group">
+              <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
+            </div>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Waktu Kunjungan</p>
+            <div class="input-group">
+              <input type="time" class="form-control border-bottom card-body-formulir" required>
+            </div>
+          </div>
+          <div class="text-start px-4 mb-4">
+            <p>Lokasi</p>
+            <select name="lokasi" id="lokasi" class="form-control border-bottom shadow-none selectric" required>
+              <!--Kasih JS, ambil dari database-->
+              <option selected></option>
+              <option value=""></option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary" id="btnSimpan" onclick="SimpanBooking()">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
 
   <!-- General JS Scripts -->
   <script src="assets/modules/jquery.min.js"></script>
