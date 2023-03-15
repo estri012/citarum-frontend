@@ -255,7 +255,7 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="card border rounded">
                 <div class="card-header center card-proses">
-                  <h5>Sedang Diproses</h5>
+                  <h5>Diajukan Kunjungan</h5>
                 </div>
                 <div class="card-body">
                   <!--Javascript disini ambil jenis dokumen-->
@@ -294,7 +294,7 @@
                     <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
                   </dl> -->
                   <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-proses" role="button" id="btnBooking" data-toggle="modal" data-target="#bookingPengaduan">Booking Kunjungan</a>
+                  <a class="btn btn-hubungi-proses" role="button" id="btnBooking" data-toggle="modal" data-target="#bookingPengaduan">Jadwal Kunjungan</a>
                 </div>
               </div>
             </div>
@@ -343,7 +343,7 @@
                     <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
                   </dl> -->
                   <a class="btn btn-riwayat-perbaikan" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-perbaikan" href="#" role="button">Hubungi</a>
+                  <a class="btn btn-hubungi-perbaikan" href="https://api.whatsapp.com/send?phone=6285722363280" target="_blank" role="button">Hubungi</a>
                 </div>
               </div>
             </div>
@@ -515,48 +515,141 @@
 <div class="modal fade" id="bookingPengaduan" tabindex="-1" role="dialog" aria-labelledby="bookingPengaduanTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="bookingPengaduanTitle">Booking Pengaduan</h5>
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="bookingPengaduanTitle" style="color: white;">Pilih Tempat Kunjungan</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="">
-        <div class="modal-body">
-          <div class="text-start px-4 mb-4">
-            <p>No Dokumen</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>No Antrian</p>
-            <input type="text" class="form-control card-body-formulir border-bottom shadow-none" required>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Tanggal Kunjungan</p>
-            <div class="input-group">
-              <input type="date" class="form-control datepicker border-bottom card-body-formulir" required>
-            </div>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Waktu Kunjungan</p>
-            <div class="input-group">
-              <input type="time" class="form-control border-bottom card-body-formulir" required>
-            </div>
-          </div>
-          <div class="text-start px-4 mb-4">
-            <p>Lokasi</p>
-            <select name="lokasi" id="lokasi" class="form-control border-bottom shadow-none selectric" required>
-              <!--Kasih JS, ambil dari database-->
-              <option selected></option>
-              <option value=""></option>
-            </select>
-          </div>
+
+      <div class="center" style="padding-left: 5%; padding-right: 5%; padding-top: 5%;">
+        <a class="btn" href="#" role="button" id="btnDisduk" onclick="SimpanBooking1()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large; padding-right: 21%; padding-left: 21%;">Disdukcapil</a>
+      </div>
+      <div class="center" style="padding:5%">
+        <a class="btn" href="#" role="button" id="btnKec" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large; padding-left: 6%; padding-right: 6%;">Kecamatan Pemohon</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
+
+<!--Modal Pop Up Pilih Tanggal (Belum Ada JS)-->
+<div class="modal fade" id="bookingTanggal" tabindex="-1" role="dialog" aria-labelledby="bookingTanggalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="padding-bottom:5%;">
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="bookingTanggalTitle" style="color: white;">Booking Kunjungan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div style="padding-top:3%">
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>Disdukcapil</span><i class="fas fa-pen"></i>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary" id="btnSimpan" onclick="SimpanBooking()">Simpan</button>
-        </div>
-      </form>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="SimpanBooking2()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">01 Maret 2023</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">02 Maret 2023</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: darkgrey; color: #3D6C53; border-color: #3D6C53; font-size: xx-large; pointer-events: none;">03 Maret 2023</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">04 Maret 2023</a>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
+
+<!--Modal Pop Up Pilih Jam (Belum Ada JS)-->
+<div class="modal fade" id="bookingJam" tabindex="-1" role="dialog" aria-labelledby="bookingJamTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="padding-bottom:5%;">
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="bookingJamTitle" style="color: white;">Pilih Jam Kunjungan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div style="padding-top:3%">
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="SimpanBooking3()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:00</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">09:00</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: darkgrey; color: #3D6C53; border-color: #3D6C53; font-size: xx-large; pointer-events: none;">10:00</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">11:00</a>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
+
+<!--Modal Pop Up Pilih Jam-Menit (Belum Ada JS)-->
+<div class="modal fade" id="bookingMenit" tabindex="-1" role="dialog" aria-labelledby="bookingMenitTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="padding-bottom:5%;">
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="bookingMenitTitle" style="color: white;">Pilih Jam Kunjungan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div style="padding-top:3%">
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="SimpanBooking4()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:00</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:15</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: darkgrey; color: #3D6C53; border-color: #3D6C53; font-size: xx-large; pointer-events: none;">08:30</a>
+      </div>
+      <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+        <a class="btn" href="#" role="button" onclick="" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:45</a>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
+
+<!--Modal Pop Up Verifikasi Booking (Belum Ada JS)-->
+<div class="modal fade" id="verifBooking" tabindex="-1" role="dialog" aria-labelledby="verifBookingTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="padding-bottom:5%;">
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="verifBookingTitle" style="color: white;">Verifikasi Jadwal Kunjungan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body ml-4" style="color: #3D6C53;">
+        <h6>Apakah anda yakin akan menjadwalkan kunjungan pada tanggal 01 Maret 2023 pukul 08.30 di Kantor Disdukcapil?</h6>
+      </div>
+
+      <div class="modal-footer center">
+        <button type="button" class="btn btn-primary btn-shadow" onclick="SimpanBookingfinal()" id="">YA</button>
+        <button type="button" class="btn btn-secondary" id="" onclick="BookingNo()">Tidak</button>
+      </div>
+      
     </div>
   </div>
 </div>

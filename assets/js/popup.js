@@ -59,11 +59,35 @@ function tutupmodal() {
     $('#modalCenter').modal('hide')
 };
 
-function SimpanBooking() {
+function SimpanBooking1() {
     $('#bookingPengaduan').modal('hide');
+    $('#bookingTanggal').modal('show');
+}
+
+function SimpanBooking2() {
+    $('#bookingTanggal').modal('hide');
+    $('#bookingJam').modal('show');
+}
+
+function SimpanBooking3() {
+    $('#bookingJam').modal('hide');
+    $('#bookingMenit').modal('show');
+}
+
+function SimpanBooking4() {
+    $('#bookingMenit').modal('hide');
+    $('#verifBooking').modal('show');
+}
+
+function SimpanBookingfinal() {
+    $('#verifBooking').modal('hide');
     change_button();
 }
 
+function BookingNo() {
+    $('#verifBooking').modal('hide');
+}
+
 function change_button(){
-    document.getElementById("btnBooking").innerHTML = "Lihat Tiket";
+    document.getElementById("btnBooking").innerHTML = "Tiket Kunjungan";
 }
