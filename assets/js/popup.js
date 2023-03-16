@@ -59,6 +59,10 @@ function tutupmodal() {
     $('#modalCenter').modal('hide')
 };
 
+function BookingJadwal() {
+    $('#bookingPengaduan').modal('show');
+}
+
 function SimpanBooking1() {
     $('#bookingPengaduan').modal('hide');
     $('#bookingTanggal').modal('show');
@@ -79,15 +83,50 @@ function SimpanBooking4() {
     $('#verifBooking').modal('show');
 }
 
-function SimpanBookingfinal() {
-    $('#verifBooking').modal('hide');
-    change_button();
+function BackBooking1() {
+    $('#bookingTanggal').modal('hide');
+    $('#bookingPengaduan').modal('show')
+}
+
+function BackBooking2() {
+    $('#bookingJam').modal('hide');
+    $('#bookingPengaduan').modal('show')
+}
+
+function BackBooking3() {
+    $('#bookingJam').modal('hide');
+    $('#bookingTanggal').modal('show')
+}
+
+function BackBooking4() {
+    $('#bookingMenit').modal('hide');
+    $('#bookingPengaduan').modal('show')
+}
+
+function BackBooking5() {
+    $('#bookingMenit').modal('hide');
+    $('#bookingTanggal').modal('show')
+}
+
+function BackBooking6() {
+    $('#bookingMenit').modal('hide');
+    $('#bookingJam').modal('show')
 }
 
 function BookingNo() {
     $('#verifBooking').modal('hide');
 }
 
-function change_button(){
-    document.getElementById("btnBooking").innerHTML = "Tiket Kunjungan";
+function SimpanBookingfinal() {
+    $('#verifBooking').modal('hide');
+    change_button();
 }
+
+
+
+function change_button(){
+    //document.getElementById("btnBooking").innerHTML = "Tiket Kunjungan";
+    const element = document.getElementById("btnBooking");
+    element.innerHTML = "Tiket Kunjungan";
+}
+

@@ -294,7 +294,7 @@
                     <dd class="col-sm-5"><a href="#" class="btn btn-unduh-selesai">Unduh Dokumen</a></dd>
                   </dl> -->
                   <a class="btn btn-riwayat-proses" href="#" role="button">Periksa Riwayat</a>
-                  <a class="btn btn-hubungi-proses" role="button" id="btnBooking" data-toggle="modal" data-target="#bookingPengaduan">Jadwal Kunjungan</a>
+                  <a class="btn btn-hubungi-proses" role="button" id="btnBooking" onclick="BookingJadwal()">Jadwal Kunjungan</a>
                 </div>
               </div>
             </div>
@@ -547,7 +547,7 @@
 
       <div style="padding-top:3%">
         <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
-          <span>Disdukcapil</span><i class="fas fa-pen"></i>
+          <span>Disdukcapil</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking1()"><i class="fas fa-pen" style="font-size: large;"></i></a>
         </div>
       <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
         <a class="btn" href="#" role="button" onclick="SimpanBooking2()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">01 Maret 2023</a>
@@ -580,6 +580,12 @@
       </div>
 
       <div style="padding-top:3%">
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>Disdukcapil</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking2()"><i class="fas fa-pen" style="font-size: large;"></i></a>
+        </div>
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>01 Maret 2023</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking3()"><i class="fas fa-pen" style="font-size: large;"></i></a>
+        </div>
       <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
         <a class="btn" href="#" role="button" onclick="SimpanBooking3()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:00</a>
       </div>
@@ -611,6 +617,15 @@
       </div>
 
       <div style="padding-top:3%">
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>Disdukcapil</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking4()"><i class="fas fa-pen" style="font-size: large;"></i></a>
+        </div>
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>01 Maret 2023</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking5()"><i class="fas fa-pen" style="font-size: large;"></i></a>
+        </div>
+        <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%; font-size: xx-large; color: #3D6C53;">
+          <span>08:00</span>&nbsp;&nbsp;<a href="#" role="button" onclick="BackBooking6()"><i class="fas fa-pen" style="font-size: large;"></i></a>
+        </div>
       <div class="center" style="padding-left: 2%; padding-right: 2%; padding-top: 2%;">
         <a class="btn" href="#" role="button" onclick="SimpanBooking4()" style="background-color: white; color: #3D6C53; border-color: #3D6C53; font-size: xx-large;">08:00</a>
       </div>
@@ -642,7 +657,38 @@
       </div>
 
       <div class="modal-body ml-4" style="color: #3D6C53;">
-        <h6>Apakah anda yakin akan menjadwalkan kunjungan pada tanggal 01 Maret 2023 pukul 08.30 di Kantor Disdukcapil?</h6>
+        <h6>Apakah anda yakin akan menjadwalkan kunjungan pada tanggal 01 Maret 2023 pukul 08.00 di Kantor Disdukcapil?</h6>
+      </div>
+
+      <div class="modal-footer center">
+        <button type="button" class="btn btn-primary btn-shadow" onclick="SimpanBookingfinal()" id="">YA</button>
+        <button type="button" class="btn btn-secondary" id="" onclick="BookingNo()">Tidak</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal Pop Up end-->
+
+<!--Modal Pop Up Detail Tiket (Belum Ada JS)-->
+<div class="modal fade" id="detailBooking" tabindex="-1" role="dialog" aria-labelledby="detailBookingTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="padding-bottom:5%;">
+      <div class="modal-header" style="background-color: #3D6C53;">
+        <h5 class="modal-title" id="detailBookingTitle" style="color: white;">Tiket Jadwal Kunjungan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div>
+        <h2>Jenis Kunjungan</h2>
+        <p>Jenis Layanan - Nomor Dokumen</p>
+        <hr>
+
+      </div>
+
+      <div class="modal-body ml-4" style="color: #3D6C53;">
+        <h6>Apakah anda yakin akan menjadwalkan kunjungan pada tanggal 01 Maret 2023 pukul 08.00 di Kantor Disdukcapil?</h6>
       </div>
 
       <div class="modal-footer center">
